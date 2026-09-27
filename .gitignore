@@ -47,6 +47,8 @@ banned-players.json
 bukkit.yml
 /plugins/WorldGuard
 /plugins/WorldEdit
+/plugins/Citizens/saves.yml
+/plugins/AuraSkills/config.yml
 /plugins/Werewolf/players
 /plugins/Werewolf
 /plugins/ViaVersion
