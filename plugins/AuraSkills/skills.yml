@@ -143,4 +143,10 @@ skills:
       max_level: 100
       check_cancelled: true
       check_multiplier_permissions: true
+  auraskills/sorcery:
+    options:
+      enabled: true
+      max_level: 100
+      check_cancelled: true
+      check_multiplier_permissions: true
 file_version: 1

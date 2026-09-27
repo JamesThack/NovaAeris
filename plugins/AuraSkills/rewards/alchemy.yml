@@ -1,10 +1,5 @@
 patterns:
   - type: stat
-    stat: wisdom
-    value: 1
-    pattern:
-      interval: 1
-  - type: stat
     stat: health
     value: 0.4
     pattern:

@@ -1,7 +1,6 @@
 patterns:
   - type: stat
-    stat: regeneration
-    value: 1
+    stat: wisdom
+    value: 2.5
     pattern:
       interval: 1
-levels:

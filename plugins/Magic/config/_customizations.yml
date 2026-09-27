@@ -1,2 +1,4 @@
 aurelium_skills:
   use_mana: true
+  xp_earn_from_sp:
+    SORCERY: 0.5
