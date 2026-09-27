@@ -15,6 +15,13 @@ NovaAeris is a public Minecraft server configuration and content repository for 
 - Avoid editing generated or machine-specific files unless the task specifically calls for it. Check `.gitignore` and `git status` before deciding what belongs in a change. If an ignored local file contains intentional content that should be shared, separate that content from generated state before proposing it for tracking.
 - Do not change security or access controls (such as online mode, whitelist, permissions, operator lists, or RCON settings) unless the request requires it.
 
+## Planning configuration changes
+
+- Keep agent plans and their related Markdown or other supporting files in the root `agent-plans/` folder. It is ignored by Git, so plan artifacts stay local unless the user asks to share them elsewhere.
+- When asked to plan configuration changes, critically assess the requested approach before recommending it. Consider likely performance and resource impacts, compatibility with the installed server and plugins, and maintenance costs.
+- Check whether an existing installed plugin or a suitable plugin could provide the requested feature before proposing a large custom configuration or recreating the feature from scratch. Explain meaningful tradeoffs and uncertainties.
+- Use Mermaid for diagrams in plans when it helps explain relationships, workflows, or dependencies; keep simple plans in clear prose or lists.
+
 ## Validation
 
 - This repository has no evident build or automated test workflow. Do not invent one for configuration-only changes.

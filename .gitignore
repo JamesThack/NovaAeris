@@ -49,6 +49,7 @@ bukkit.yml
 /plugins/WorldEdit
 /plugins/Citizens/saves.yml
 /plugins/AuraSkills/config.yml
+/agent-plans/
 /plugins/Werewolf/players
 /plugins/Werewolf
 /plugins/ViaVersion
