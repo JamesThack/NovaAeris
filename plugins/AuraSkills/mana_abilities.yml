@@ -16,26 +16,6 @@ mana_abilities:
     replant_delay: 4
     show_particles: true
     prevent_unripe_break: true
-  auraskills/treecapitator:
-    enabled: true
-    base_value: 5.0
-    value_per_level: 5.0
-    base_cooldown: 200
-    cooldown_per_level: -5
-    base_mana_cost: 20
-    mana_cost_per_level: 12
-    unlock: 6
-    level_up: 6
-    max_level: 0
-    require_sneak: false
-    check_offhand: true
-    sneak_offhand_bypass: true
-    max_blocks_multiplier: 1
-    give_xp: true
-    durability_multiplier: 0
-    max_limit_durability: false
-    call_block_break_event: false
-    call_block_drop_item_event: false
   auraskills/speed_mine:
     enabled: true
     base_value: 10.0

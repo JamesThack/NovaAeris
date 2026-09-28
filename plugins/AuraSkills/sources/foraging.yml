@@ -142,12 +142,6 @@ sources:
 tags:
   foraging_luck_applicable:
   - '*'
-  treecapitator_applicable:
-  - '*_log'
-  - '*_leaves'
-  - '*_stem'
-  - '*_mushroom_block'
-  - '*_wart_block'
   trunks:
   - '*_log'
   - '*_stem'

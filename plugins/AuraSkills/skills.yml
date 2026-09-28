@@ -19,7 +19,6 @@ skills:
     - auraskills/axe_master
     - auraskills/valor
     - auraskills/shredder
-    mana_ability: auraskills/treecapitator
     options:
       enabled: true
       max_level: 100

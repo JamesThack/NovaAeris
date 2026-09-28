@@ -61,3 +61,9 @@
 # kill:
 #    costs:
 #       health: 10
+
+# Fourth Chop tier, doubling the third tier's tree-felling capacity
+chop|4:
+  parameters:
+    drop_count: 64
+    depth: 64
