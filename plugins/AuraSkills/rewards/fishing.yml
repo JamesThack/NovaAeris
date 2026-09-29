@@ -10,3 +10,28 @@ patterns:
     pattern:
       interval: 2
 levels:
+  5:
+    - type: command
+      executor: console
+      command: 'mage add {player} stream'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Stream I</bold><gray>: Spray a stream of water (0.25 player / 0.5 mob damage)'
+  15:
+    - type: command
+      executor: console
+      command: 'mage add {player} bubble'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Bubble</bold><gray>: Unlock the Bubble spell'
+  25:
+    - type: command
+      executor: console
+      command: 'mage add {player} stream|2'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Stream II</bold><gray>: Stronger water stream (0.5 player / 0.75 mob damage)'
+  60:
+    - type: command
+      executor: console
+      command: 'mage add {player} stream|3'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Stream III</bold><gray>: Stronger water stream (0.75 player / 1 mob damage)'
+  80:
+    - type: command
+      executor: console
+      command: 'mage add {player} stream|4'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Stream IV</bold><gray>: Strongest stream (1 player / 1.25 mob damage, longer range)'

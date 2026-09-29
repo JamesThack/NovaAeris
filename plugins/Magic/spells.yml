@@ -381,3 +381,134 @@ railgun|2:
 
 railgun|3:
   enabled: false
+
+# Defense skill upgrades for Invincible.
+invincible|2:
+  parameters:
+    duration: 10000
+    effect_slow: 0
+
+invincible|3:
+  parameters:
+    duration: 10000
+    effect_slow: 0
+    effect_invisibility: 5
+
+# Agility reward tuning: keep every Fling rank at the same cost and cooldown.
+fling:
+  parameters:
+    cooldown: 5000
+  costs:
+    mana: 8
+
+fling|2:
+  parameters:
+    cooldown: 5000
+  costs:
+    mana: 8
+
+fling|3:
+  parameters:
+    cooldown: 5000
+  costs:
+    mana: 8
+
+fling|4:
+  parameters:
+    cooldown: 5000
+  costs:
+    mana: 8
+
+# Expand the Fighting skill's Magic Missile progression beyond the defaults.
+missile|6:
+  parameters:
+    range: 64
+    player_damage: 5
+    entity_damage: 12
+  costs:
+    mana: 35
+
+missile|7:
+  parameters:
+    range: 72
+    player_damage: 6
+    entity_damage: 14
+  costs:
+    mana: 40
+
+# Fireball's five Fighting rewards use controlled direct-hit and blast scaling.
+fireball:
+  parameters:
+    damage: 4
+
+fireball|2:
+  parameters:
+    damage: 5
+
+fireball|3:
+  parameters:
+    damage: 6
+
+fireball|4:
+  parameters:
+    damage: 8
+
+fireball|5:
+  parameters:
+    size: 2
+    spread: 0
+    speed: 1
+    fire: true
+    damage: 10
+    cooldown: 15000
+  costs:
+    mana: 60
+
+# Disintegrate is the high-impact Fighting unlock, limited by its long cooldown.
+disintegrate:
+  parameters:
+    range: 24
+    player_damage: 30
+    entity_damage: 50
+    cooldown: 120000
+  costs:
+    mana: 100
+
+# Fishing reward extension for Stream, continuing its gradual damage scaling.
+stream|4:
+  parameters:
+    player_damage: 1
+    entity_damage: 1.25
+    range: 40
+    undo_to: 6
+
+# Sorcery rewards: extend Horse duration and provide the second Pull rank.
+horse:
+  parameters:
+    undo: 300000
+
+pull|2:
+  parameters:
+    range: 64
+    living_entity_speed: 1.25
+    item_speed: 2.5
+    cooldown: 3000
+  costs:
+    mana: 15
+
+# Keep the Sorcery Blink progression at a consistent mana cost across ranks.
+blink:
+  costs:
+    mana: 15
+
+blink|2:
+  costs:
+    mana: 15
+
+blink|3:
+  costs:
+    mana: 15
+
+blink|4:
+  costs:
+    mana: 15

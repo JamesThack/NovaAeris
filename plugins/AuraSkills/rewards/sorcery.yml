@@ -4,3 +4,89 @@ patterns:
     value: 0.5
     pattern:
       interval: 1
+levels:
+  3:
+    - type: command
+      executor: console
+      command: 'mage add {player} push'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Push</bold><gray>: Unlock the Push spell'
+  6:
+    - type: command
+      executor: console
+      command: 'mage add {player} pull'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Pull</bold><gray>: Unlock the Pull spell'
+  9:
+    - type: command
+      executor: console
+      command: 'mage add {player} horse'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Horse</bold><gray>: Summon a horse for 5 minutes'
+  12:
+    - type: command
+      executor: console
+      command: 'mage add {player} admission'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Admission</bold><gray>: Unlock the Admission spell'
+  15:
+    - type: command
+      executor: console
+      command: 'mage add {player} push|2'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Push II</bold><gray>: Push more targets from farther away'
+  20:
+    - type: command
+      executor: console
+      command: 'mage add {player} pull|2'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Pull II</bold><gray>: Pull targets from farther away with more force'
+  25:
+    - type: command
+      executor: console
+      command: 'mage add {player} blink'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Blink</bold><gray>: Unlock the Blink spell'
+  30:
+    - type: command
+      executor: console
+      command: 'mage add {player} stash'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Stash</bold><gray>: Access your ender chest remotely'
+  35:
+    - type: command
+      executor: console
+      command: 'mage add {player} rubberize'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Rubberize</bold><gray>: Unlock the Rubberize spell'
+  40:
+    - type: command
+      executor: console
+      command: 'mage add {player} music'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Music</bold><gray>: Unlock the Music spell'
+  45:
+    - type: command
+      executor: console
+      command: 'mage add {player} hat'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Hat</bold><gray>: Unlock the Hat spell'
+  50:
+    - type: command
+      executor: console
+      command: 'mage add {player} feed'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Feed</bold><gray>: Unlock the Feed spell'
+  55:
+    - type: command
+      executor: console
+      command: 'mage add {player} disposal'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Disposal</bold><gray>: Permanently destroy unwanted items'
+  60:
+    - type: command
+      executor: console
+      command: 'mage add {player} blink|2'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Blink II</bold><gray>: Teleport up to 16 blocks'
+  70:
+    - type: command
+      executor: console
+      command: 'mage add {player} blink|3'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Blink III</bold><gray>: 24 block range; alternate-up to ascend'
+  75:
+    - type: command
+      executor: console
+      command: 'mage add {player} blink|4'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Blink IV</bold><gray>: 32 block range; alternate-down to descend'
+  80:
+    - type: command
+      executor: console
+      command: 'mage add {player} vanish'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Vanish</bold><gray>: Unlock the Vanish spell'
