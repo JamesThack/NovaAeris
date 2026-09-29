@@ -96,3 +96,27 @@
 #    mana_max: 100
 #    mana: 100
 #    mana_regeneration: 10
+
+# Normalize mana regeneration across the built-in wand templates.
+base_wand:
+  mana_regeneration: 1
+base_sword:
+  mana_regeneration: 1
+wand:
+  mana_regeneration: 1
+beginner:
+  mana_regeneration: 1
+student:
+  mana_regeneration: 1
+apprentice:
+  mana_regeneration: 1
+master:
+  mana_regeneration: 1
+miniwolf:
+  mana_regeneration: 1
+purger:
+  mana_regeneration: 1
+rage:
+  mana_regeneration: 1
+spleef:
+  mana_regeneration: 1

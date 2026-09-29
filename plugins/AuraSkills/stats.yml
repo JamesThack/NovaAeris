@@ -17,7 +17,7 @@ stats:
       auraskills/hunger_regen:
         modifier: 0.02
       auraskills/mana_regen:
-        modifier: 0.02
+        modifier: 1
   auraskills/luck:
     enabled: true
     traits:
@@ -99,7 +99,7 @@ traits:
     base: 1
   auraskills/mana_regen:
     enabled: true
-    base: 0.1
+    base: 1
   auraskills/farming_luck:
     enabled: true
   auraskills/foraging_luck:

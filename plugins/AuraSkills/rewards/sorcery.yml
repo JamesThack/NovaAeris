@@ -1,6 +1,6 @@
 patterns:
   - type: stat
     stat: wisdom
-    value: 2.5
+    value: 0.5
     pattern:
       interval: 1

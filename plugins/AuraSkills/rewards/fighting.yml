@@ -4,9 +4,4 @@ patterns:
     value: 1
     pattern:
       interval: 1
-  - type: stat
-    stat: regeneration
-    value: 1
-    pattern:
-      interval: 2
 levels:

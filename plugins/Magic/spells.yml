@@ -62,8 +62,322 @@
 #    costs:
 #       health: 10
 
+# Award Foraging XP when each Chop tier hits a tree.
+chop:
+  actions:
+    cast:
+    - class: ChangeContext
+      source_offset: 0,-0.7,0
+      actions:
+      - class: ArmorStandProjectile
+        actions:
+        - class: CheckBlock
+          allowed: trees
+          actions:
+          - class: Recurse
+            actions:
+            - class: Drop
+          - class: Command
+            console: true
+            command: 'sk xp add %player_name% foraging 4 true'
+chop|2:
+  actions:
+    cast:
+    - class: ChangeContext
+      source_offset: 0,-0.7,0
+      actions:
+      - class: ArmorStandProjectile
+        actions:
+        - class: CheckBlock
+          allowed: trees
+          actions:
+          - class: Recurse
+            actions:
+            - class: Drop
+          - class: Command
+            console: true
+            command: 'sk xp add %player_name% foraging 6 true'
+chop|3:
+  actions:
+    cast:
+    - class: ChangeContext
+      source_offset: 0,-0.7,0
+      actions:
+      - class: ArmorStandProjectile
+        actions:
+        - class: CheckBlock
+          allowed: trees
+          actions:
+          - class: Recurse
+            actions:
+            - class: Drop
+          - class: Command
+            console: true
+            command: 'sk xp add %player_name% foraging 8 true'
+
 # Fourth Chop tier, doubling the third tier's tree-felling capacity
 chop|4:
+  actions:
+    cast:
+    - class: ChangeContext
+      source_offset: 0,-0.7,0
+      actions:
+      - class: ArmorStandProjectile
+        actions:
+        - class: CheckBlock
+          allowed: trees
+          actions:
+          - class: Recurse
+            actions:
+            - class: Drop
+          - class: Command
+            console: true
+            command: 'sk xp add %player_name% foraging 10 true'
   parameters:
     drop_count: 64
     depth: 64
+
+# Fifth Chop tier, doubling the fourth tier's tree-felling capacity
+chop|5:
+  actions:
+    cast:
+    - class: ChangeContext
+      source_offset: 0,-0.7,0
+      actions:
+      - class: ArmorStandProjectile
+        actions:
+        - class: CheckBlock
+          allowed: trees
+          actions:
+          - class: Recurse
+            actions:
+            - class: Drop
+          - class: Command
+            console: true
+            command: 'sk xp add %player_name% foraging 12 true'
+  parameters:
+    drop_count: 128
+    depth: 128
+
+# Award Farming XP once after each Growth cast completes.
+growth:
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Disc
+        actions:
+        - class: Cover
+          actions:
+          - class: Bonemeal
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% farming 4 true'
+
+growth|2:
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Disc
+        actions:
+        - class: Cover
+          actions:
+          - class: Bonemeal
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% farming 6 true'
+
+growth|3:
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Disc
+        actions:
+        - class: Cover
+          actions:
+          - class: Bonemeal
+          - class: Bonemeal
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% farming 8 true'
+
+growth|4:
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Disc
+        actions:
+        - class: Cover
+          actions:
+          - class: Bonemeal
+          - class: Bonemeal
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% farming 10 true'
+
+growth|5:
+  actions:
+    cast:
+    - class: CustomProjectile
+      actions:
+      - class: Disc
+        actions:
+        - class: Cover
+          actions:
+          - class: Bonemeal
+          - class: Bonemeal
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% farming 12 true'
+  parameters:
+    radius: 6
+
+# Award Mining XP once after each Mine cast completes.
+mine:
+  actions:
+    cast:
+    - class: Delay
+    - class: Recurse
+      actions:
+      - class: PlayEffects
+        effects: drop
+      - class: Delay
+      - class: Drop
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 4 true'
+
+mine|2:
+  actions:
+    cast:
+    - class: Delay
+    - class: Recurse
+      actions:
+      - class: PlayEffects
+        effects: drop
+      - class: Delay
+      - class: Drop
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 6 true'
+  parameters:
+    tool: mine_fortune_2
+    limit: 12
+    depth: 3
+
+mine|3:
+  actions:
+    cast:
+    - class: Delay
+    - class: Recurse
+      actions:
+      - class: PlayEffects
+        effects: drop
+      - class: Delay
+      - class: Drop
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 8 true'
+  parameters:
+    tool: loot3_pickaxe
+    limit: 20
+    depth: 3
+
+mine|4:
+  actions:
+    cast:
+    - class: Delay
+    - class: Recurse
+      actions:
+      - class: PlayEffects
+        effects: drop
+      - class: Delay
+      - class: Drop
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 10 true'
+  parameters:
+    tool: mine_fortune_4
+    limit: 24
+    depth: 4
+
+mine|5:
+  actions:
+    cast:
+    - class: Delay
+    - class: Recurse
+      actions:
+      - class: PlayEffects
+        effects: drop
+      - class: Delay
+      - class: Drop
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 12 true'
+  parameters:
+    tool: loot5_pickaxe
+    limit: 32
+    depth: 5
+
+# Peek ranks unlocked through Mining level rewards.
+peek:
+  parameters:
+    radius: 2
+
+peek|2:
+  parameters:
+    radius: 3
+
+peek|3:
+  parameters:
+    radius: 4
+
+peek|4:
+  parameters:
+    radius: 5
+
+peek|5:
+  parameters:
+    radius: 7
+
+# Blast is slightly stronger at its initial Excavation unlock; the level 84
+# upgrade increases its radius and block-breaking power further.
+blast:
+  parameters:
+    radius: 1.5
+    destructible_durability: 100
+    break_durability: 20
+    durability_max_distance: 4
+    damage_max_distance: 3
+    damage: 4
+
+blast|2:
+  parameters:
+    radius: 2.5
+    destructible_durability: 250
+    break_durability: 60
+    durability_max_distance: 5
+    damage_max_distance: 4
+    damage: 6
+    undo: 20000
+
+# Railgun is unlocked at Archery 85 at level 1; higher versions are disabled.
+railgun:
+  enabled: true
+  parameters:
+    player_damage: 23
+    entity_damage: 23
+    cooldown: 25000
+  headshot_parameters:
+    player_damage: 31
+    entity_damage: 31
+    damage_multiplier: 1
+
+railgun|2:
+  enabled: false
+
+railgun|3:
+  enabled: false

@@ -1,0 +1,136 @@
+#
+# This is the localization file for the Magic plugin.
+#
+# All in-game text can be controlled from this file.
+#
+# You can also add individual files to the messages/ folder
+#
+# The default will always be loaded first, so the English messages will be used for any
+# keys you do not provide in this file.
+#
+# To see the current default builtin configs, look in this folder:
+# https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/messages
+#
+# For customization help see:
+# https://github.com/elBukkit/MagicPlugin/wiki/Customization
+#
+
+#
+# Examples:
+# Note that a "#" character means the line is commented out and has no effect.
+# Make sure to not comment out the lines you add, there should not be a space in front of the name, indentation is important.
+# Use http://www.yamllint.com if you have issues with your config, make sure not to use tabs!
+#
+
+# Change name/description of Magic Missile spell
+# spells:
+#   missile:
+#     name: Zap
+#     description: Zap somebody!
+
+# Remove obsolete currency and rank progression guidance.
+currency:
+  sp:
+    name: ''
+    name_short: ''
+    description: ''
+help:
+  common_customizations: |-
+    `<title text="Common Customizations">`
+    `<li>``<command command="mconfig spell default parameters.target_npc true" text="Allow all spells to target NPCs">`
+    `<li>``<command command="mconfig spell override parameters.undo 0" text="Turn off auto-undo, all spell effects made permanent">`
+    `<li>``<command command="mconfig config enable_crafting false" text="Disable all Magic crafting recipes">`
+    `<li>``<command command="mconfig disable spell blink" text="Disable a specific spell">`
+    `<li>``<command command="mconfig config sound_volume 0.1" text="Lower all sound volume to 10%">` &7Note that the survival example is already at 50%
+    `<li>``<help topic="donator_shops" text="How to set up a donator shop">`
+    `<li>``<help topic="customize_damage" text="How to customize spell damage">`
+  trails: ''
+  commands: |-
+    `<title text="Commands">`
+    `<li>``<command command="help magic" text="See full command help">`
+    `<li>``<command command="mage promote" text="Rank yourself up">`
+    `<li>``<command command="getrp url" text="Get a download URL for the resource pack">`
+    `<li>``<command command="mage reset @p caster" text="Reset your survival progress">`
+    `<li>``<command command="mage reset @p" text="Completely reset your magic player data">`
+    `<li>``<help topic="permissions" text="Help with permissions">`
+    `<li>`Commands on wiki: &6https://github.com/elBukkit/MagicPlugin/wiki/Commands
+    `<li>``<command command="mgive wand" text="Get the default survival wand">`
+  integration: |-
+    `<title text="Integration">`
+    `<li>`&dMagic integrates with several `<help topic="protection" text="protection plugins">` to keep spells from griefing and trolling
+    `<li>`&dMagic integrates with &bEssentials&f and &bCommandBook&f for `<help topic="warps" text="warps">`
+    `<li>`&dMagic integrates with &b`<link url="https://www.spigotmc.org/resources/libs-disguises-free.81/" text="LibsDisguises">`&f for mob and spell `<help topic="disguises" text="disguises">`
+    `<li>`&dMagic integrates with &bMythicMobs&f for mythic mob spawning
+    `<li>`&dMagic integrates with &b<`help topic="auraskills" text="AuraSkills">`&f for skills, stats and (optionally) mana
+    `<li>`&dMagic integrates with &b`<help topic="dynmap" text="dynmap">`&f to show warps, spell casts and lost wands on maps
+    `<li>`You can use `<help topic="skript" text="Skript">` to react to spell casts and other events.
+    `<li>`You can use &6`<help topic="placeholders" text="placeholders">` via &b`<link url="https://www.spigotmc.org/resources/placeholderapi.6245/" text="PlaceholderAPI">`&f to show magic properties in various places
+    `<li>``<help topic="compatibility" text="Compatibility or issues with other plugins">`
+  placeholders: |-
+    `<title text="Placeholders">`
+    `<p>`&dMagic&f provides a variety of placeholders that can be used in messages sent with the &bMessage&f action
+    `<p>`or commands issued with the &bCommand&f action.
+    `<p>`For example &b$path&f or &b@mana_max&f. Any variable or attribute can be used as a placeholder.
+    `<p>`In general the &b$&f prefix shows the full value of a numeric `<help topic="attributes" text="attribute">`, while &b@&f will round.
+    `<p>`The &b`<link url="https://www.spigotmc.org/resources/placeholderapi.6245/" text="PlaceholderAPI">`&f plugin can be used alongside compatible chat or other plugins to show &dMagic placeholders in other places.
+    `<p>`Use a &bmagic_&f prefix in PlaceholderAPI configs, such as &b%magic_path%&f.
+    `<p>`Example `<link url="https://www.spigotmc.org/resources/chatformat.74890/" text="ChatFormat">` chat prefix: &7'(%magic_path%) {PLAYER_NAME} > {SUFFIX}{MESSAGE}'&f
+    `<p>`See `<link url="https://github.com/elBukkit/MagicPlugin/wiki/Placeholders" text="the wiki">` for a list of available placeholders.
+  mythicmobs: |-
+    `<title text="Mythic Mobs">`
+    `<li>`MythicMobs can cast &dMagic&f spells using the command skill: `<link url="https://github.com/elBukkit/MagicPlugin/blob/master/Magic/src/examples/MythicMobs-2.0/Skills/MagicSkills.yml" text="Example">`
+    `<li>`Magic mobs can use a MythicMob as a base with &7mythic_mob: <name>&f in a config
+    `<li>`Mythic mob names can be used in place of a &dMagic&f mob key in mmob commands and spell configs
+    `<li>``<command command="mitem save myitem" text="Save a the item in your hand">` to turn a Mythic item into a &dMagic&f item.
+  loot: |-
+    `<title text="Mob Loot">`
+    `<p>`&dMagic&f mobs can drop custom wands, spells and other magic items.
+    `<p>`Some of the builtin mobs drop custom items, such as the &3warlock wand&f
+    `<p>`These items can be sold in the `<command command="mnpc add lootshop" text="loot shop">` when using the `<command command="mexample add spawnmobs" text="spawnmobs">` example.
+    `<p>`The items are otherwise useless.
+    `<p>`Use `<command command="meditor mob warlock" text="the editor">` to change mob loot drops.
+  progression: |-
+    `<title text="Spell Progression">`
+    `<p>`Some spells are granted through skill progression.
+    `<p>`Use &6/sk&f to view your skills. Level &bSorcery&f to increase your maximum mana.
+    `<li>``<help topic="spell_levels" text="About spell levels">`
+  spell_points: ''
+  paths: |-
+    `<title text="Skills and Mana">`
+    `<p>`Use &6/sk&f to view your skills.
+    `<p>`Level &bSorcery&f to increase your maximum mana.
+spells:
+  spellshop:
+    description: Spells are granted through skill progression.
+  spshop:
+    name: ''
+    description: ''
+    title: ''
+  remove_protection:
+    description: ''
+  remove_fall_protection:
+    description: ''
+  remove_fire_protection:
+    description: ''
+  remove_physical_protection:
+    description: ''
+  remove_projectile_protection:
+    description: ''
+  remove_explosion_protection:
+    description: ''
+  wanddebuffshop:
+    description: ''
+wand:
+  sp_earn_instructions: ''
+  earn_instructions: |-
+    &8| &7> &fYou have earned some &6$currency!
+    &8| &7> &fYour &6$currency &fcan be seen while the spell inventory is open
+  mana_instructions: |-
+    &8| &7> &fSpells require &6mana &fto cast, shown in the &7Mana&f (or &5XP&f) bar
+    &8| &7> &fLevel &bSorcery&f using &6/sk&f to increase your maximum mana
+  enchant_instructions: ''
+  path_instructions: ''
+wands:
+  potion_sp100:
+    name: ''
+    description: ''

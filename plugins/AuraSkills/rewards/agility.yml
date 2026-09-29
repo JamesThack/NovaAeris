@@ -1,7 +1,2 @@
 patterns:
-  - type: stat
-    stat: regeneration
-    value: 1
-    pattern:
-      interval: 1
 levels:

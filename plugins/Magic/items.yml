@@ -1,4 +1,5 @@
 #
+
 # Modify this file to change, add or disable custom item types.
 # These items are not wands and don't have any non-vanilla data attached.
 #
@@ -49,3 +50,14 @@
 #        DURABILITY: 8
 #        DIG_SPEED: 8
 #
+
+# Fortune levels used by the Mine spell's Mining progression.
+mine_fortune_2:
+  item: diamond_pickaxe
+  enchantments:
+    minecraft:fortune: 2
+
+mine_fortune_4:
+  item: diamond_pickaxe
+  enchantments:
+    minecraft:fortune: 4

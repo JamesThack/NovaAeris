@@ -10,3 +10,68 @@ patterns:
     pattern:
       interval: 2
 levels:
+  3:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrow'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow I</bold><gray>: Unlock the Arrow spell'
+  10:
+    - type: command
+      executor: console
+      command: 'mage add {player} homing'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Homing Missile I</bold><gray>: Unlock a missile that tracks its target'
+  15:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrow|2'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow II</bold><gray>: Upgrade the Arrow spell'
+  18:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrowrain'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow Rain I</bold><gray>: Unlock a volley of arrows'
+  30:
+    - type: command
+      executor: console
+      command: 'mage add {player} homing|2'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Homing Missile II</bold><gray>: Faster missile, more damage'
+  38:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrowrain|2'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow Rain II</bold><gray>: More, flaming arrows'
+  40:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrow|3'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow III</bold><gray>: Upgrade the Arrow spell'
+  55:
+    - type: command
+      executor: console
+      command: 'mage add {player} homing|3'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Homing Missile III</bold><gray>: Faster missile, more damage'
+  60:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrow|4'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow IV</bold><gray>: Upgrade the Arrow spell'
+  75:
+    - type: command
+      executor: console
+      command: 'mage add {player} homing|4'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Homing Missile IV</bold><gray>: Faster missile, more damage'
+  80:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrow|5'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow V</bold><gray>: Upgrade the Arrow spell'
+  85:
+    - type: command
+      executor: console
+      command: 'mage add {player} railgun'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Railgun I</bold><gray>: 23 damage, 31 on a headshot'
+  100:
+    - type: command
+      executor: console
+      command: 'mage add {player} arrow|6'
+      menu_message: '\n  <dark_aqua>✦ <bold><aqua>Arrow VI</bold><gray>: Upgrade the Arrow spell'

@@ -65,6 +65,7 @@ bukkit.yml
 /plugins/Movecraft/localisation
 plugins/Magic/worlds.yml
 plugins/Magic/messages.yml
+!plugins/Magic/messages.yml
 /plugins/Magic/defaults
 /plugins/Magic/data
 plugins/LuckPerms/luckperms-h2-v2.mv.db
