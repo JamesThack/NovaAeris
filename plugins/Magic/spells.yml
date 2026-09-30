@@ -638,14 +638,50 @@ fling|4:
     - class: Velocity
     - class: FallProtection
 
-# Expand the Fighting skill's Magic Missile progression beyond the defaults.
+# Keep every Fighting Magic Missile rank at the base spell's 15 mana cost,
+# with a small, steady damage increase as Fighting level rises.
+missile:
+  parameters:
+    player_damage: 3
+    entity_damage: 5
+  costs:
+    mana: 15
+
+missile|2:
+  parameters:
+    player_damage: 3.5
+    entity_damage: 6
+  costs:
+    mana: 15
+
+missile|3:
+  parameters:
+    player_damage: 4
+    entity_damage: 7
+  costs:
+    mana: 15
+
+missile|4:
+  parameters:
+    player_damage: 4.5
+    entity_damage: 9
+  costs:
+    mana: 15
+
+missile|5:
+  parameters:
+    player_damage: 5
+    entity_damage: 11
+  costs:
+    mana: 15
+
 missile|6:
   parameters:
     range: 64
-    player_damage: 5
-    entity_damage: 12
+    player_damage: 5.5
+    entity_damage: 13
   costs:
-    mana: 35
+    mana: 15
 
   actions:
     cast:
@@ -665,9 +701,9 @@ missile|7:
   parameters:
     range: 72
     player_damage: 6
-    entity_damage: 14
+    entity_damage: 15
   costs:
-    mana: 40
+    mana: 15
 
   actions:
     cast:
@@ -686,7 +722,9 @@ missile|7:
 # Fireball's five Fighting rewards use controlled direct-hit and blast scaling.
 fireball:
   parameters:
-    damage: 4
+    damage: 5
+  costs:
+    mana: 30
 
   actions:
     cast:
@@ -700,7 +738,9 @@ fireball:
 
 fireball|2:
   parameters:
-    damage: 5
+    damage: 7
+  costs:
+    mana: 30
 
   actions:
     cast:
@@ -714,7 +754,9 @@ fireball|2:
 
 fireball|3:
   parameters:
-    damage: 6
+    damage: 9
+  costs:
+    mana: 30
 
   actions:
     cast:
@@ -728,7 +770,9 @@ fireball|3:
 
 fireball|4:
   parameters:
-    damage: 8
+    damage: 12
+  costs:
+    mana: 30
 
   actions:
     cast:
@@ -746,10 +790,10 @@ fireball|5:
     spread: 0
     speed: 1
     fire: true
-    damage: 10
+    damage: 15
     cooldown: 15000
   costs:
-    mana: 60
+    mana: 45
 
   actions:
     cast:
@@ -788,11 +832,26 @@ disintegrate:
       - class: ModifyBlock
         ignore_result: true
 
-# Fishing reward extension for Stream, continuing its gradual damage scaling.
+# Buff every Fishing Stream rank modestly while preserving its damage curve.
+stream:
+  parameters:
+    player_damage: 0.35
+    entity_damage: 0.65
+
+stream|2:
+  parameters:
+    player_damage: 0.6
+    entity_damage: 0.9
+
+stream|3:
+  parameters:
+    player_damage: 0.85
+    entity_damage: 1.15
+
 stream|4:
   parameters:
-    player_damage: 1
-    entity_damage: 1.25
+    player_damage: 1.1
+    entity_damage: 1.4
     range: 40
     undo_to: 6
 
