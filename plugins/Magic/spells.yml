@@ -66,6 +66,9 @@
 chop:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 2 true'
     - class: ChangeContext
       source_offset: 0,-0.7,0
       actions:
@@ -83,6 +86,9 @@ chop:
 chop|2:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 4 true'
     - class: ChangeContext
       source_offset: 0,-0.7,0
       actions:
@@ -100,6 +106,9 @@ chop|2:
 chop|3:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 6 true'
     - class: ChangeContext
       source_offset: 0,-0.7,0
       actions:
@@ -119,6 +128,9 @@ chop|3:
 chop|4:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 8 true'
     - class: ChangeContext
       source_offset: 0,-0.7,0
       actions:
@@ -141,6 +153,9 @@ chop|4:
 chop|5:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 10 true'
     - class: ChangeContext
       source_offset: 0,-0.7,0
       actions:
@@ -163,6 +178,9 @@ chop|5:
 growth:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 2 true'
     - class: CustomProjectile
       actions:
       - class: Disc
@@ -177,6 +195,9 @@ growth:
 growth|2:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 4 true'
     - class: CustomProjectile
       actions:
       - class: Disc
@@ -191,6 +212,9 @@ growth|2:
 growth|3:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 6 true'
     - class: CustomProjectile
       actions:
       - class: Disc
@@ -206,6 +230,9 @@ growth|3:
 growth|4:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 8 true'
     - class: CustomProjectile
       actions:
       - class: Disc
@@ -221,6 +248,9 @@ growth|4:
 growth|5:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 10 true'
     - class: CustomProjectile
       actions:
       - class: Disc
@@ -239,6 +269,9 @@ growth|5:
 mine:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 2 true'
     - class: Delay
     - class: Recurse
       actions:
@@ -253,6 +286,9 @@ mine:
 mine|2:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 4 true'
     - class: Delay
     - class: Recurse
       actions:
@@ -271,6 +307,9 @@ mine|2:
 mine|3:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 6 true'
     - class: Delay
     - class: Recurse
       actions:
@@ -289,6 +328,9 @@ mine|3:
 mine|4:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 8 true'
     - class: Delay
     - class: Recurse
       actions:
@@ -307,6 +349,9 @@ mine|4:
 mine|5:
   actions:
     cast:
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% sorcery 10 true'
     - class: Delay
     - class: Recurse
       actions:
@@ -327,21 +372,81 @@ peek:
   parameters:
     radius: 2
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 4 true'
+    - class: Sphere
+      actions:
+      - class: FakeBlock
+
 peek|2:
   parameters:
     radius: 3
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 6 true'
+    - class: Sphere
+      actions:
+      - class: FakeBlock
 
 peek|3:
   parameters:
     radius: 4
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 8 true'
+    - class: Sphere
+      actions:
+      - class: FakeBlock
+
 peek|4:
   parameters:
     radius: 5
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 10 true'
+    - class: Sphere
+      actions:
+      - class: FakeBlock
+
 peek|5:
   parameters:
     radius: 7
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% mining 12 true'
+    - class: Sphere
+      actions:
+      - class: FakeBlock
 
 # Blast is slightly stronger at its initial Excavation unlock; the level 84
 # upgrade increases its radius and block-breaking power further.
@@ -354,6 +459,24 @@ blast:
     damage_max_distance: 3
     damage: 4
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% excavation 8 true'
+    - class: CustomProjectile
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: Velocity
+      - class: Sphere
+        actions:
+        - class: BreakBlock
+
 blast|2:
   parameters:
     radius: 2.5
@@ -363,6 +486,24 @@ blast|2:
     damage_max_distance: 4
     damage: 6
     undo: 20000
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% excavation 12 true'
+    - class: CustomProjectile
+      actions:
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: Velocity
+      - class: Sphere
+        actions:
+        - class: BreakBlock
 
 # Railgun is unlocked at Archery 85 at level 1; higher versions are disabled.
 railgun:
@@ -376,6 +517,20 @@ railgun:
     entity_damage: 31
     damage_multiplier: 1
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 12 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
 railgun|2:
   enabled: false
 
@@ -388,11 +543,31 @@ invincible|2:
     duration: 10000
     effect_slow: 0
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% defense 6 true'
+    - class: PotionEffect
+
 invincible|3:
   parameters:
     duration: 10000
     effect_slow: 0
     effect_invisibility: 5
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% defense 12 true'
+    - class: PotionEffect
 
 # Agility reward tuning: keep every Fling rank at the same cost and cooldown.
 fling:
@@ -401,11 +576,33 @@ fling:
   costs:
     mana: 8
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 4 true'
+    - class: Velocity
+    - class: FallProtection
+
 fling|2:
   parameters:
     cooldown: 5000
   costs:
     mana: 8
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 6 true'
+    - class: Velocity
+    - class: FallProtection
 
 fling|3:
   parameters:
@@ -413,11 +610,33 @@ fling|3:
   costs:
     mana: 8
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 8 true'
+    - class: Velocity
+    - class: FallProtection
+
 fling|4:
   parameters:
     cooldown: 5000
   costs:
     mana: 8
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 12 true'
+    - class: Velocity
+    - class: FallProtection
 
 # Expand the Fighting skill's Magic Missile progression beyond the defaults.
 missile|6:
@@ -428,6 +647,20 @@ missile|6:
   costs:
     mana: 35
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 10 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
 missile|7:
   parameters:
     range: 72
@@ -436,22 +669,76 @@ missile|7:
   costs:
     mana: 40
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 12 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
 # Fireball's five Fighting rewards use controlled direct-hit and blast scaling.
 fireball:
   parameters:
     damage: 4
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 4 true'
+    - class: Projectile
+
 fireball|2:
   parameters:
     damage: 5
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 6 true'
+    - class: Projectile
 
 fireball|3:
   parameters:
     damage: 6
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 8 true'
+    - class: Projectile
+
 fireball|4:
   parameters:
     damage: 8
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 10 true'
+    - class: Projectile
 
 fireball|5:
   parameters:
@@ -464,6 +751,16 @@ fireball|5:
   costs:
     mana: 60
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 12 true'
+    - class: Projectile
+
 # Disintegrate is the high-impact Fighting unlock, limited by its long cooldown.
 disintegrate:
   parameters:
@@ -474,6 +771,23 @@ disintegrate:
   costs:
     mana: 100
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 10 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: PlayEffects
+        effects: removed
+        ignore_result: true
+      - class: ModifyBlock
+        ignore_result: true
+
 # Fishing reward extension for Stream, continuing its gradual damage scaling.
 stream|4:
   parameters:
@@ -482,10 +796,59 @@ stream|4:
     range: 40
     undo_to: 6
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fishing 12 true'
+    - class: DisablePhysics
+      ignore_result: true
+    - class: CustomProjectile
+      tick:
+      - class: ModifyBlock
+        ignore_result: true
+      - class: Undo
+        ignore_result: true
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: Velocity
+
 # Sorcery rewards: extend Horse duration and provide the second Pull rank.
 horse:
   parameters:
     undo: 300000
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: ChangeContext
+      target_offset: 0,1,0
+      ignore_result: true
+      actions:
+      - class: Plane
+        radius: 1
+        actions:
+        - class: CheckBlock
+          allowed: passthrough
+          fail:
+          - class: Message
+            ignore_result: true
+            message_type: action_bar
+            message_key: nospace
+          - class: CastResult
+            result: no_target
+            end_result: true
+          - class: Stop
+    - class: SpawnEntity
+    - class: Mount
+    - class: PlayEffects
+      effects: spawned
 
 pull|2:
   parameters:
@@ -496,19 +859,805 @@ pull|2:
   costs:
     mana: 15
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Velocity
+    - class: FallProtection
+    alternate_down:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: Repeat
+        repeat: 2
+        actions:
+        - class: AreaOfEffect
+          radius: 12
+          actions:
+          - class: Velocity
+            push: -1
+            living_entity_speed: 1
+          - class: FallProtection
+          - class: Delay
+            delay: 200
+
 # Keep the Sorcery Blink progression at a consistent mana cost across ranks.
 blink:
   costs:
     mana: 15
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: ChangeContext
+      target_caster: true
+      ignore_result: true
+      actions:
+      - class: FallProtectionAction
+    - class: Teleport
+
 blink|2:
   costs:
     mana: 15
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: ChangeContext
+      target_caster: true
+      ignore_result: true
+      actions:
+      - class: FallProtectionAction
+    - class: Teleport
 
 blink|3:
   costs:
     mana: 15
 
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: ChangeContext
+      target_caster: true
+      ignore_result: true
+      actions:
+      - class: FallProtectionAction
+    - class: Teleport
+
 blink|4:
   costs:
     mana: 15
+
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: ChangeContext
+      target_caster: true
+      ignore_result: true
+      actions:
+      - class: FallProtectionAction
+    - class: Teleport
+
+missile:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 4 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
+arrow:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 4 true'
+    - class: Projectile
+
+missile|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 4 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
+push:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: VelocityAction
+      y_offset: 1
+    - class: Repeat
+      actions:
+      - class: Delay
+      - class: PlayEffects
+        effects: iterate
+        ignore_result: true
+      - class: ConeOfEffectAction
+        actions:
+        - class: VelocityAction
+
+airscooter:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 4 true'
+    - class: MountArmorStand
+
+invincible:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% defense 4 true'
+    - class: PotionEffect
+
+sandblast:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% excavation 4 true'
+    - class: CustomProjectile
+      actions:
+      - class: ChangeContext
+        target_offset: 0,30,0
+        actions:
+        - class: Volume
+          actions:
+          - class: ModifyBlock
+
+stream:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fishing 4 true'
+    - class: DisablePhysics
+      ignore_result: true
+    - class: CustomProjectile
+      tick:
+      - class: ModifyBlock
+        ignore_result: true
+      - class: Undo
+        ignore_result: true
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: Velocity
+
+pull:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Velocity
+    - class: FallProtection
+    alternate_down:
+    - class: ChangeContext
+      target_caster: true
+      actions:
+      - class: Repeat
+        repeat: 2
+        actions:
+        - class: AreaOfEffect
+          radius: 12
+          actions:
+          - class: Velocity
+            push: -1
+            living_entity_speed: 1
+          - class: FallProtection
+          - class: Delay
+            delay: 200
+
+homing:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 4 true'
+    - class: Message
+      message: lock_on
+      message_type: action_bar
+      message_target: true
+    - class: CustomProjectile
+      hitbox: true
+      actions:
+      - class: Damage
+
+missile|3:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 4 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
+admission:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Door
+
+arrow|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 4 true'
+    - class: Projectile
+
+bubble:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fishing 4 true'
+    - class: CustomProjectile
+      actions:
+      - class: DisablePhysics
+      - class: Volume
+        actions:
+        - class: ModifyBlock
+
+push|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: VelocityAction
+      y_offset: 1
+    - class: Repeat
+      actions:
+      - class: Delay
+      - class: PlayEffects
+        effects: iterate
+        ignore_result: true
+      - class: ConeOfEffectAction
+        actions:
+        - class: VelocityAction
+
+arrowrain:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 2 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 4 true'
+    - class: Projectile
+
+levitate:
+  actions:
+    reactivate:
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 6 true'
+    - class: Velocity
+      direction: 0,1,0
+      additive: true
+      speed: 2
+    - class: Delay
+      delay: 100
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+
+petrify:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 6 true'
+    - class: CustomProjectile
+      actions:
+      - class: PotionEffect
+      - class: FallProtection
+
+sandblast|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% excavation 6 true'
+    - class: CustomProjectile
+      actions:
+      - class: ChangeContext
+        target_offset: 0,30,0
+        actions:
+        - class: Volume
+          actions:
+          - class: ModifyBlock
+
+shell:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% defense 6 true'
+    - class: CustomProjectile
+      actions:
+      - class: Sphere
+        actions:
+        - class: ModifyBlock
+
+stream|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fishing 6 true'
+    - class: DisablePhysics
+      ignore_result: true
+    - class: CustomProjectile
+      tick:
+      - class: ModifyBlock
+        ignore_result: true
+      - class: Undo
+        ignore_result: true
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: Velocity
+
+missile|4:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 6 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
+homing|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 6 true'
+    - class: Message
+      message: lock_on
+      message_type: action_bar
+      message_target: true
+    - class: CustomProjectile
+      hitbox: true
+      actions:
+      - class: Damage
+
+stash:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Inventory
+
+levitate|2:
+  actions:
+    reactivate:
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 6 true'
+    - class: Velocity
+      direction: 0,1,0
+      additive: true
+      speed: 2
+    - class: Delay
+      delay: 100
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+
+rubberize:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Recurse
+      actions:
+      - class: ModifyBlock
+
+arrowrain|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 4 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 6 true'
+    - class: Projectile
+
+arrow|3:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 8 true'
+    - class: Projectile
+
+lightning:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 8 true'
+    - class: Spread
+      actions:
+      - class: Lightning
+
+music:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: PlayRecord
+
+missile|5:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fighting 8 true'
+    - class: CustomProjectile
+      actions:
+      - class: Damage
+      - class: BreakBlock
+        ignore_result: true
+
+hat:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Wear
+
+levitate|3:
+  actions:
+    reactivate:
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 8 true'
+    - class: Velocity
+      direction: 0,1,0
+      additive: true
+      speed: 2
+    - class: Delay
+      delay: 100
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+
+walls:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% defense 8 true'
+    - class: Cylinder
+      actions:
+      - class: ModifyBlock
+      - class: PlayEffects
+        effects: column
+      - class: Skip
+        skip: 4
+        actions:
+        - class: Delay
+          delay: 10
+
+feed:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: PlayerSelect
+      actions:
+      - class: Feed
+      - class: GiveItem
+      - class: Heal
+      - class: PotionEffect
+
+disposal:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Inventory
+
+homing|3:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 6 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 8 true'
+    - class: Message
+      message: lock_on
+      message_type: action_bar
+      message_target: true
+    - class: CustomProjectile
+      hitbox: true
+      actions:
+      - class: Damage
+
+arrow|4:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 10 true'
+    - class: Projectile
+
+collapse:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% excavation 10 true'
+    - class: CustomProjectile
+      actions:
+      - class: Sphere
+        actions:
+        - class: ModifyBlock
+
+stream|3:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% fishing 10 true'
+    - class: DisablePhysics
+      ignore_result: true
+    - class: CustomProjectile
+      tick:
+      - class: ModifyBlock
+        ignore_result: true
+      - class: Undo
+        ignore_result: true
+      - class: AreaOfEffect
+        actions:
+        - class: Damage
+        - class: Velocity
+
+levitate|4:
+  actions:
+    reactivate:
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 10 true'
+    - class: Velocity
+      direction: 0,1,0
+      additive: true
+      speed: 2
+    - class: Delay
+      delay: 100
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+
+homing|4:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 8 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 10 true'
+    - class: Message
+      message: lock_on
+      message_type: action_bar
+      message_target: true
+    - class: CustomProjectile
+      hitbox: true
+      actions:
+      - class: Damage
+
+arrow|5:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 12 true'
+    - class: Projectile
+
+collapse|2:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% excavation 12 true'
+    - class: CustomProjectile
+      actions:
+      - class: Sphere
+        actions:
+        - class: ModifyBlock
+
+vanish:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Vanish
+
+levitate|5:
+  actions:
+    reactivate:
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% agility 12 true'
+    - class: Velocity
+      direction: 0,1,0
+      additive: true
+      speed: 2
+    - class: Delay
+      delay: 100
+    - class: Fly
+    - class: FallProtection
+      duration: 10000
+
+arrow|6:
+  actions:
+    cast:
+    - class: Command
+      console: true
+      command: sk xp add %player_name% sorcery 10 true
+    - class: Command
+      console: true
+      command: 'sk xp add %player_name% archery 12 true'
+    - class: Projectile
