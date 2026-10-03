@@ -81,18 +81,14 @@ presets:
     name: 'LVL Modifier - Player Variable'
     modifiers:
       player-variable-mod:
-        player-variable: '%level%'
+        # Requires the PlaceholderAPI Math expansion to average the four AuraSkills placeholders.
+        player-variable: '%math_FLOOR(({auraskills_archery}+{auraskills_fighting}+{auraskills_defense}+{auraskills_sorcery})/4)%'
         player-variable-scale: 1.0
-        player-variable-tiers:
-          '31-45': 3-7
-          '16-30': 2-5
-          '0-15': 1-3
-          default: 1
         match-variable: false
-        use-variable-as-max: false
+        use-variable-as-max: true
         recheck-players: true
         decrease-output: true
-        output-cap: 25
+        output-cap: 100
         preserve-entity: 5s
 
   lvlmodifier-custom-formula:
@@ -290,15 +286,8 @@ default-rule:
     #- challenge-platinum
     #- challenge-formula
     
-    #===== Choose Strategies =====
-    #- lvlstrategy-random
-    - lvlstrategy-weighted-random
-    - lvlstrategy-distance-from-origin
-    #- lvlstrategy-y-coordinate
-
     #===== Choose Modifiers =====
     - lvlmodifier-player-variable
-    - lvlmodifier-custom-formula
 
     #===== Choose Additional Options =====
     - nametag-using-numbers
@@ -328,9 +317,9 @@ default-rule:
   settings:
   # Core LevelledMobs Settings
     minLevel: 1
-    maxLevel: 50
+    maxLevel: 100
 
-    construct-level: '%distance-from-origin% + %weighted-random% + %player-variable-mod% + %custom_special% + %rand_-5_5%'
+    construct-level: '%player-variable-mod%'
 
   # CustomDrop Settings
     use-custom-item-drops-for-mobs: true
@@ -348,7 +337,12 @@ default-rule:
       20-29: '&#FFCD56' #Yellow
       30-39: '&#F2003D' #Red
       40-49: '&#B447FF' #Purple
-      50-50: '&#FFD700' #Gold
+      50-59: '&#FFD700' #Gold
+      60-69: '&#00C9A7' #Teal
+      70-79: '&#FF8C42' #Orange
+      80-89: '&#FF4FA3' #Pink
+      90-99: '&#8F5CFF' #Violet
+      100-100: '&#FFFFFF' #White
       default: '&#FFFFFF' #White
       
     health-indicator:
@@ -385,31 +379,19 @@ default-rule:
 #   ---------------  -  ------------------------------
 #
 custom-rules:
-  - custom-rule: 'Nether World Levelling Strategy'
+  - custom-rule: 'Nether Player Combat Scaling'
     is-enabled: true
     conditions:
       worlds: 'world_nether'
-    strategies:
-      y-coordinate:
-        start-height: 100
-        period: 0
-        end-height: 60
     settings:
-      construct-level: '%y-coordinate% + %custom_nether%'
+      construct-level: '%player-variable-mod%'
 
-  - custom-rule: 'End World Levelling Strategy'
+  - custom-rule: 'End Player Combat Scaling'
     is-enabled: true
     conditions:
       worlds: 'world_the_end'
-    strategies:
-      distance-from-origin:
-        ringed-tiers: 200
-        buffer-distance: 1000
-        origin-coordinates:
-          x: 0
-          z: 0
     settings:
-      construct-level: '%distance-from-origin% + %custom_end%'
+      construct-level: '%player-variable-mod%'
 
   - custom-rule: 'Custom Attributes for Specific Mobs'
     is-enabled: true

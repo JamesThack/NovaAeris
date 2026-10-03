@@ -20,7 +20,7 @@ NovaAeris is a public Minecraft server configuration and content repository for 
 - Keep agent plans and their related Markdown or other supporting files in the root `agent-plans/` folder. It is ignored by Git, so plan artifacts stay local unless the user asks to share them elsewhere.
 - When asked to plan configuration changes, critically assess the requested approach before recommending it. Consider likely performance and resource impacts, compatibility with the installed server and plugins, and maintenance costs.
 - Check whether an existing installed plugin or a suitable plugin could provide the requested feature before proposing a large custom configuration or recreating the feature from scratch. Explain meaningful tradeoffs and uncertainties.
-- Use Mermaid for diagrams in plans when it helps explain relationships, workflows, or dependencies; keep simple plans in clear prose or lists.
+- The repository owner really likes Mermaid diagrams. Use Mermaid whenever it meaningfully clarifies relationships, workflows, dependencies, or other complex ideas; do not add diagrams just for decoration, and keep simple material in clear prose or lists.
 
 ## Validation
 
