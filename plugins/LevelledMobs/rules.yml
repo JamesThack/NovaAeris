@@ -138,9 +138,9 @@ presets:
         merge: false
         max-health: 5.0
         movement-speed: 0.15
-        attack-damage: 2.25
-        ranged-attack-damage: 1.5
-        creeper-blast-damage: 0.75
+        attack-damage: 6.75
+        ranged-attack-damage: 6.75
+        creeper-blast-damage: 6.75
         item-drop: 3.0
         xp-drop: 5.0
       # Special Multipliers (0.0 Min - 1.0 Max)
@@ -306,6 +306,8 @@ default-rule:
     worlds: ['*']
     #biomes: ['*']
     entities: ['*']
+    spawn-reasons:
+      excluded-list: [ 'SPAWNER', 'LM_SPAWNER' ]
 
     mob-customname-status: EITHER
     mob-tamed-status: EITHER
@@ -379,6 +381,12 @@ default-rule:
 #   ---------------  -  ------------------------------
 #
 custom-rules:
+  - custom-rule: 'Skip LevelledMobs for Spawner Mobs'
+    is-enabled: true
+    conditions:
+      spawn-reasons: [ 'SPAWNER', 'LM_SPAWNER' ]
+      stop-processing: true
+
   - custom-rule: 'Nether Player Combat Scaling'
     is-enabled: true
     conditions:
@@ -444,15 +452,6 @@ custom-rules:
         excluded-list: [ 'IRON_GOLEM' ]
     settings:
       nametag-visibility-method: [ 'MELEE', 'ATTACKED' ]
-
-  - custom-rule: 'Spawner Cube Entities'
-    is-enabled: true
-    use-preset: challenge-bronze
-    conditions:
-      spawn-reasons: [ 'SPAWNER' ]
-    settings:
-      entity-name-override:
-        all_entities: 'Spawner %displayname%'
 
   - custom-rule: 'Armor and Weapons CustomDrop Table'
     is-enabled: true
