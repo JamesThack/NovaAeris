@@ -236,7 +236,8 @@ npc:
   selection:
     # The default item in hand to select an NPC
     item: stick
-    message: Selected [[<npc>]] (ID [[<id>]]).
+    message: <gray><bold>[<light_purple><bold>Server<gray><bold>]<light_purple> Selected
+      [[<npc>]] (ID [[<id>]]).
   # Whether the server owns NPCs rather than individual players
   server-ownership: false
   shops:

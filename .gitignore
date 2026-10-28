@@ -101,3 +101,13 @@ plugins/TAB/users.yml
 config.yml
 /plugins/BetterRTP
 /plugins/BetterStructures
+/plugins/Autorank/backups
+/plugins/Autorank/data
+plugins/Autorank/DefaultBehavior.yml
+plugins/Autorank/internalprops.yml
+plugins/Autorank/lang/lang.yml
+plugins/Autorank/lang/langFR.yml
+/plugins/Autorank/lang
+/plugins/Autorank/logging
+plugins/Autorank/playerdata/PlayerData.yml
+/plugins/Autorank/uuids

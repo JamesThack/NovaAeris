@@ -1,0 +1,104 @@
+# Paths file - each path promotes players from their current group to the next rank.
+# Playtime values are cumulative totals.
+Wanderer:
+  prerequisites:
+    in group:
+      value: default
+  requirements:
+    time:
+      value: 0m
+  results:
+    command:
+      value: lp user &p parent set wanderer
+    message:
+      value: You are now a Wanderer!
+  options:
+    display name: Wanderer
+    auto choose: true
+    show based on prerequisites: true
+
+Scout:
+  prerequisites:
+    in group:
+      value: wanderer
+  requirements:
+    time:
+      value: 2h
+  results:
+    command:
+      value: lp user &p parent set scout
+    message:
+      value: You are now a Scout!
+  options:
+    display name: Scout
+    auto choose: true
+    show based on prerequisites: true
+
+Adventurer:
+  prerequisites:
+    in group:
+      value: scout
+  requirements:
+    time:
+      value: 4h
+  results:
+    command:
+      value: lp user &p parent set adventurer
+    message:
+      value: You are now an Adventurer!
+  options:
+    display name: Adventurer
+    auto choose: true
+    show based on prerequisites: true
+
+Squire:
+  prerequisites:
+    in group:
+      value: adventurer
+  requirements:
+    time:
+      value: 7h
+  results:
+    command:
+      value: lp user &p parent set squire
+    message:
+      value: You are now a Squire!
+  options:
+    display name: Squire
+    auto choose: true
+    show based on prerequisites: true
+
+Knight:
+  prerequisites:
+    in group:
+      value: squire
+  requirements:
+    time:
+      value: 12h
+  results:
+    command:
+      value: lp user &p parent set knight
+    message:
+      value: You are now a Knight!
+  options:
+    display name: Knight
+    auto choose: true
+    show based on prerequisites: true
+
+Lord:
+  prerequisites:
+    in group:
+      value: knight
+  requirements:
+    time:
+      value: 20h
+  results:
+    command:
+      value: lp user &p parent set lord
+    message:
+      value: You are now a Lord!
+  options:
+    display name: Lord
+    auto choose: true
+    show based on prerequisites: true
+
