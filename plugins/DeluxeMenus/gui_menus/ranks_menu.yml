@@ -1,0 +1,121 @@
+menu_title: '&8✧ &b&lNOVA AERIS &8✧ &7Ranks'
+open_command: ranks
+size: 45
+update_interval: 1
+items:
+  'frame':
+    material: PURPLE_STAINED_GLASS_PANE
+    display_name: ' '
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 18
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 41
+      - 42
+      - 43
+      - 44
+
+  'wanderer':
+    material: LEATHER_BOOTS
+    slot: 10
+    display_name: '&f&lWanderer'
+    lore:
+      - '&8Rank Tier I'
+      - ''
+      - '&7The beginning of your journey.'
+      - '&fUnlock: &aStarting rank'
+      - ''
+      - '&8Promotions are automatic'
+
+  'scout':
+    material: COMPASS
+    slot: 13
+    display_name: '&a&lScout'
+    lore:
+      - '&8Rank Tier II'
+      - ''
+      - '&7Find your way beyond spawn.'
+      - '&fUnlock: &e2 hours total playtime'
+      - ''
+      - '&8Promotions are automatic'
+
+  'adventurer':
+    material: IRON_PICKAXE
+    slot: 16
+    display_name: '&b&lAdventurer'
+    lore:
+      - '&8Rank Tier III'
+      - ''
+      - '&7Ready to explore the wider world.'
+      - '&fUnlock: &e4 hours total playtime'
+      - ''
+      - '&8Promotions are automatic'
+
+  'squire':
+    material: IRON_CHESTPLATE
+    slot: 19
+    display_name: '&9&lSquire'
+    lore:
+      - '&8Rank Tier IV'
+      - ''
+      - '&7Begin your path to knighthood.'
+      - '&fUnlock: &e7 hours total playtime'
+      - ''
+      - '&8Promotions are automatic'
+
+  'knight':
+    material: IRON_SWORD
+    slot: 22
+    display_name: '&6&lKnight'
+    lore:
+      - '&8Rank Tier V'
+      - ''
+      - '&7Earn your place among the realm''s defenders.'
+      - '&fUnlock: &e12 hours total playtime'
+      - ''
+      - '&8Promotions are automatic'
+
+  'lord':
+    material: GOLDEN_CHESTPLATE
+    slot: 25
+    display_name: '&d&lLord'
+    lore:
+      - '&8Rank Tier VI'
+      - ''
+      - '&7A noble standing in Nova Aeris.'
+      - '&fUnlock: &e20 hours total playtime'
+      - ''
+      - '&8Promotions are automatic'
+
+  'rank_info':
+    material: ENCHANTED_BOOK
+    slot: 40
+    display_name: '&b&lRank Progression'
+    lore:
+      - '&7Playtime thresholds are cumulative.'
+      - '&7Rank-ups happen automatically.'
+      - ''
+      - '&eReach Lord at 20 hours.'
