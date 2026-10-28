@@ -1,5 +1,5 @@
 name: Airship
-maxSize: 5000
+maxSize: 15000
 minSize: 1000
 allowedBlocks: 
     - "#planks"
@@ -106,7 +106,7 @@ detectionMultiplier: 10.0
 underwaterDetectionMultiplier: 1.0
 speed: 1.0
 cruiseSkipBlocks: 4
-cruiseSpeed: 0.5
+cruiseSpeed: 4
 fuelBurnRate: 2.0
 sinkPercent: 99.0
 overallSinkPercent: 60.0

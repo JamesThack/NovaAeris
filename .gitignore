@@ -91,3 +91,13 @@ config/paper-global.yml
 /plugins/.paper-remapped
 /plugins/BetonQuest/fonts
 plugins/BetonQuest/database.db
+/spawn
+plugins/TAB/users.yml
+/plugins/TAB
+/plugins/Multiverse-Core
+/plugins/FastAsyncWorldEdit
+/plugins/VoidGen
+/crash-reports
+config.yml
+/plugins/BetterRTP
+/plugins/BetterStructures

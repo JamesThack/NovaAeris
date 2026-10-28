@@ -103,11 +103,11 @@ maxHeightLimit: 110
 maxHeightAboveGround: 50
 vertCruiseSkipBlocks: 4
 collisionExplosion: 0.0
-speed: 0.3
+speed: 1
 detectionMultiplier: 10.0
 underwaterDetectionMultiplier: 1.0
 cruiseSkipBlocks: 12
-cruiseSpeed: 0.3
+cruiseSpeed: 4
 fuelBurnRate: 4.0
 sinkPercent: 99.0
 overallSinkPercent: 60.0
