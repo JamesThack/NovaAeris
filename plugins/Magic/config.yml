@@ -55,14 +55,14 @@
 
 # Show mana in the resource bar and disable Spell Points entirely.
 mana_display: bar
-sp_enabled: false
-sp_earn_enabled: false
+sp_enabled: true
+sp_earn_enabled: true
 
 # Whether wands can be crafted on a crafting table
 # enable_crafting: true
 
-# Enable/Disable automatic spell upgrades
-# enable_spell_upgrades: true
+# Let AuraSkills grant Fighting spell ranks instead of Magic upgrading them by cast count.
+enable_automatic_spell_upgrades: false
 
 # Disable the Magic Spell Points currency. Existing player balances cannot be
 # spent through the spell shop when its enchantment-table entry points are off.

@@ -1,0 +1,100 @@
+Brewer:
+  fullname: Brewer
+  shortname: Br
+  FullDescription:
+  - "Earns money brewing potions."
+  ChatColour: LIGHT_PURPLE
+  chat-display: full
+  max-level: 200
+  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.0025)-((baseincome+(baseincome*(joblevel-1)*0.0025))
+    * ((numjobs-1)*0.05))
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Heavy drinker
+      Objectives:
+      - Brew;glowstone_dust;2
+      - Brew;redstone;2
+      - Brew;sugar;2
+      RewardCommands:
+      - eco give [playerName] 20
+      - msg [playerName] Completed quest!
+      RewardDesc:
+      - Brew some stuff and get money
+      - Get 20 for this!
+  Gui:
+    ItemStack: brewing_stand
+  Brew:
+    nether_wart:
+      income: 0.30
+      points: 6.0
+      experience: 6.0
+    redstone:
+      income: 0.30
+      points: 6.0
+      experience: 6.0
+    glowstone_dust:
+      income: 0.40
+      points: 8.0
+      experience: 8.0
+    fermented_spider_eye:
+      income: 0.60
+      points: 12.0
+      experience: 12.0
+    gunpowder:
+      income: 0.30
+      points: 6.0
+      experience: 6.0
+    dragon_breath:
+      income: 1.25
+      points: 25.0
+      experience: 25.0
+    sugar:
+      income: 0.35
+      points: 7.0
+      experience: 7.0
+    rabbit_foot:
+      income: 0.90
+      points: 18.0
+      experience: 18.0
+    glistering_melon_slice:
+      income: 0.50
+      points: 10.0
+      experience: 10.0
+    spider_eye:
+      income: 0.45
+      points: 9.0
+      experience: 9.0
+    pufferfish:
+      income: 0.70
+      points: 14.0
+      experience: 14.0
+    magma_cream:
+      income: 0.60
+      points: 12.0
+      experience: 12.0
+    golden_carrot:
+      income: 0.70
+      points: 14.0
+      experience: 14.0
+    blaze_powder:
+      income: 0.60
+      points: 12.0
+      experience: 12.0
+    ghast_tear:
+      income: 1.10
+      points: 22.0
+      experience: 22.0
+    turtle_helmet:
+      income: 0.60
+      points: 12.0
+      experience: 12.0
+    phantom_membrane:
+      income: 0.60
+      points: 12.0
+      experience: 12.0

@@ -112,3 +112,14 @@ plugins/Autorank/lang/langFR.yml
 plugins/Autorank/playerdata/PlayerData.yml
 /plugins/Autorank/uuids
 /plugins/GHolo
+/plugins/LibsDisguises
+/plugins/Jobs/TranslatableWords
+/plugins/Jobs/locale
+plugins/Jobs/jobs.sqlite.db-journal
+plugins/Jobs/jobs.sqlite.db
+/plugins/EconomyShopGUI/transactions
+plugins/EconomyShopGUI/transaction-log.txt
+/plugins/EconomyShopGUI/LanguageFiles
+/plugins/AutoMessage
+/plugins/CMILib
+/plugins/EconomyShopGUI/cache

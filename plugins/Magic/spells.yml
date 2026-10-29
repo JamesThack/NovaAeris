@@ -513,6 +513,9 @@ missile|6:
       - class: Damage
       - class: BreakBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 missile|7:
   parameters:
@@ -529,6 +532,9 @@ missile|7:
       - class: Damage
       - class: BreakBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 # Fireball's five Fighting rewards use controlled direct-hit and blast scaling.
 fireball:
@@ -540,6 +546,9 @@ fireball:
   actions:
     cast:
     - class: Projectile
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 fireball|2:
   parameters:
@@ -550,6 +559,9 @@ fireball|2:
   actions:
     cast:
     - class: Projectile
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 fireball|3:
   parameters:
@@ -560,6 +572,9 @@ fireball|3:
   actions:
     cast:
     - class: Projectile
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 fireball|4:
   parameters:
@@ -570,6 +585,9 @@ fireball|4:
   actions:
     cast:
     - class: Projectile
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 fireball|5:
   parameters:
@@ -585,6 +603,9 @@ fireball|5:
   actions:
     cast:
     - class: Projectile
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 # Disintegrate is the high-impact Fighting unlock, limited by its long cooldown.
 disintegrate:
@@ -606,6 +627,9 @@ disintegrate:
         ignore_result: true
       - class: ModifyBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 # Buff every Fishing Stream rank modestly while preserving its damage curve.
 stream:
@@ -766,6 +790,9 @@ missile:
       - class: Damage
       - class: BreakBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 arrow:
   actions:
@@ -780,6 +807,9 @@ missile|2:
       - class: Damage
       - class: BreakBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 push:
   actions:
@@ -876,6 +906,9 @@ missile|3:
       - class: Damage
       - class: BreakBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 admission:
   actions:
@@ -941,6 +974,9 @@ petrify:
       actions:
       - class: PotionEffect
       - class: FallProtection
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 sandblast|2:
   actions:
@@ -987,6 +1023,9 @@ missile|4:
       - class: Damage
       - class: BreakBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 homing|2:
   actions:
@@ -1045,6 +1084,9 @@ lightning:
     - class: Spread
       actions:
       - class: Lightning
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 music:
   actions:
@@ -1059,6 +1101,9 @@ missile|5:
       - class: Damage
       - class: BreakBlock
         ignore_result: true
+    - class: Command
+      console: true
+      command: 'skills xp add @pn fighting 1'
 
 hat:
   actions:
