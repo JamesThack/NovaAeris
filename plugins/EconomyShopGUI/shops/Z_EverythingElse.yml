@@ -577,48 +577,48 @@ pages:
         sell: 1.67
       '143':
         material: DIAMOND_AXE
-        buy: 166.6
-        sell: 41.65
+        buy: 480
+        sell: 80
       '144':
         material: DIAMOND_BOOTS
-        buy: 220.5
-        sell: 55.13
+        buy: 640
+        sell: 106.67
       '145':
         material: DIAMOND_CHESTPLATE
-        buy: 441
-        sell: 110.25
+        buy: 1280
+        sell: 213.33
       '146':
         material: DIAMOND_HELMET
-        buy: 275.63
-        sell: 68.91
+        buy: 800
+        sell: 133.33
       '147':
         material: DIAMOND_HOE
-        buy: 111.47
-        sell: 27.87
+        buy: 320
+        sell: 53.33
       '148':
         material: DIAMOND_HORSE_ARMOR
         buy: 2250
         sell: 562.5
       '149':
         material: DIAMOND_LEGGINGS
-        buy: 385.88
-        sell: 96.47
+        buy: 1120
+        sell: 186.67
       '150':
         material: DIAMOND_ORE
         buy: 1000
         sell: -1
       '151':
         material: DIAMOND_PICKAXE
-        buy: 166.6
-        sell: 41.65
+        buy: 480
+        sell: 80
       '152':
         material: DIAMOND_SHOVEL
-        buy: 56.35
-        sell: 14.09
+        buy: 160
+        sell: 26.67
       '153':
         material: DIAMOND_SWORD
-        buy: 110.86
-        sell: 27.72
+        buy: 320
+        sell: 53.33
       '154':
         material: DIORITE_WALL
         buy: 0.75

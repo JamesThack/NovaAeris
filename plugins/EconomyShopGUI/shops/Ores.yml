@@ -35,12 +35,12 @@ pages:
         sell: -1
       '9':
         material: DIAMOND
-        buy: 52.5
-        sell: 13.13
+        buy: 150
+        sell: 25
       '10':
         material: DIAMOND_BLOCK
-        buy: 496.13
-        sell: 124.04
+        buy: 1350
+        sell: 225
       '11':
         material: EMERALD
         buy: 39.38

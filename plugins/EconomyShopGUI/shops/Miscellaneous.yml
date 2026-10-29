@@ -129,8 +129,8 @@ pages:
         sell: 0.34
       '29':
         material: SHULKER_SHELL
-        buy: 7
-        sell: 1.75
+        buy: 10
+        sell: 2.5
       '30':
         material: SNIFFER_EGG
         buy: 23

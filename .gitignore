@@ -123,3 +123,5 @@ plugins/EconomyShopGUI/transaction-log.txt
 /plugins/AutoMessage
 /plugins/CMILib
 /plugins/EconomyShopGUI/cache
+plugins/Jobs/activeBoosts.yml
+plugins/Jobs/blockOwnerShips.yml
