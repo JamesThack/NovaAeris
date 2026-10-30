@@ -125,3 +125,6 @@ plugins/EconomyShopGUI/transaction-log.txt
 /plugins/EconomyShopGUI/cache
 plugins/Jobs/activeBoosts.yml
 plugins/Jobs/blockOwnerShips.yml
+/plugins/AxGraves
+/plugins/AxAPI
+/plugins/Simple_RTP

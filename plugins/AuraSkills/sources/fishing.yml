@@ -6,40 +6,40 @@ sources:
   cod:
     item:
       material: cod
-    xp: 25
+    xp: 50
   salmon:
     item:
       material: salmon
-    xp: 60
+    xp: 120
   tropical_fish:
     item:
       material: tropical_fish
-    xp: 750
+    xp: 1500
   pufferfish:
     item:
       material: pufferfish
-    xp: 115
+    xp: 230
   treasure:
     item:
       category: fishing_treasure
-    xp: 1000
+    xp: 2000
     menu_item:
       material: name_tag
   junk:
     item:
       category: fishing_junk
-    xp: 30
+    xp: 60
     menu_item:
       material: stick
   rare:
     item:
       loot_pool: rare
-    xp: 2000
+    xp: 4000
     menu_item:
       material: orange_dye
   epic:
     item:
       loot_pool: epic
-    xp: 5000
+    xp: 10000
     menu_item:
       material: purple_dye

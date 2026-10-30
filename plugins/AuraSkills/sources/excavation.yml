@@ -7,46 +7,46 @@ default:
 sources:
   dirt:
     block: dirt
-    xp: 0.3
+    xp: 0.6
   grass_block:
     block: grass_block
-    xp: 0.7
+    xp: 1.4
   coarse_dirt:
     block: coarse_dirt
-    xp: 2.3
+    xp: 4.6
   podzol:
     block: podzol
-    xp: 2.5
+    xp: 5.0
   rooted_dirt:
     block: rooted_dirt
-    xp: 5.6
+    xp: 11.2
   sand:
     block: sand
-    xp: 0.4
+    xp: 0.8
   red_sand:
     block: red_sand
-    xp: 0.7
+    xp: 1.4
   gravel:
     block: gravel
-    xp: 1.5
+    xp: 3.0
   mycelium:
     block: mycelium
-    xp: 3.7
+    xp: 7.4
   clay:
     block: clay
-    xp: 2.4
+    xp: 4.8
   soul_sand:
     block: soul_sand
-    xp: 2.7
+    xp: 5.4
   soul_soil:
     block: soul_soil
-    xp: 3.0
+    xp: 6.0
   mud:
     block: mud
-    xp: 0.5
+    xp: 1.0
   muddy_mangrove_roots:
     block: muddy_mangrove_roots
-    xp: 2.5
+    xp: 5.0
 tags:
   excavation_luck_applicable:
   - '*'

@@ -58,7 +58,7 @@ items:
       - '&8Rank Tier II'
       - ''
       - '&7Find your way beyond spawn.'
-      - '&fUnlock: &e2 hours total playtime'
+      - '&fUnlock: &e5 hours total playtime'
       - ''
       - '&8Promotions are automatic'
 
@@ -70,7 +70,7 @@ items:
       - '&8Rank Tier III'
       - ''
       - '&7Ready to explore the wider world.'
-      - '&fUnlock: &e4 hours total playtime'
+      - '&fUnlock: &e10 hours total playtime'
       - ''
       - '&8Promotions are automatic'
 
@@ -82,7 +82,7 @@ items:
       - '&8Rank Tier IV'
       - ''
       - '&7Begin your path to knighthood.'
-      - '&fUnlock: &e7 hours total playtime'
+      - '&fUnlock: &e20 hours total playtime'
       - ''
       - '&8Promotions are automatic'
 
@@ -94,7 +94,7 @@ items:
       - '&8Rank Tier V'
       - ''
       - '&7Earn your place among the realm''s defenders.'
-      - '&fUnlock: &e12 hours total playtime'
+      - '&fUnlock: &e50 hours total playtime'
       - ''
       - '&8Promotions are automatic'
 
@@ -106,7 +106,7 @@ items:
       - '&8Rank Tier VI'
       - ''
       - '&7A noble standing in Nova Aeris.'
-      - '&fUnlock: &e20 hours total playtime'
+      - '&fUnlock: &e100 hours total playtime'
       - ''
       - '&8Promotions are automatic'
 
@@ -118,4 +118,4 @@ items:
       - '&7Playtime thresholds are cumulative.'
       - '&7Rank-ups happen automatically.'
       - ''
-      - '&eReach Lord at 20 hours.'
+      - '&eReach Lord at 100 hours.'

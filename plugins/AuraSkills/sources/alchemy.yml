@@ -8,7 +8,7 @@ default:
 sources:
   awkward:
     ingredient: nether_wart
-    xp: 10
+    xp: 20
     menu_item:
       potion_data:
         type: awkward
@@ -20,32 +20,32 @@ sources:
       - nether_wart
       - gunpowder
       - dragon_breath
-    xp: 15
+    xp: 30
     menu_item:
       potion_data:
         type: speed
   extended:
     ingredient: redstone
-    xp: 25
+    xp: 50
     menu_item:
       potion_data:
         type: night_vision
   upgraded:
     ingredient: glowstone_dust
-    xp: 25
+    xp: 50
     menu_item:
       potion_data:
         type: strength
   splash:
     ingredient: gunpowder
-    xp: 35
+    xp: 70
     menu_item:
       material: splash_potion
       potion_data:
         type: jump
   lingering:
     ingredient: dragon_breath
-    xp: 50
+    xp: 100
     menu_item:
       material: lingering_potion
       potion_data:
@@ -62,7 +62,7 @@ sources:
         - awkward
         extended: false
         upgraded: false
-    xp: 20
+    xp: 40
     menu_item:
       material: potion
       potion_data:
@@ -78,7 +78,7 @@ sources:
         - water
         - awkward
         extended: true
-    xp: 30
+    xp: 60
     menu_item:
       material: potion
       potion_data:
@@ -94,7 +94,7 @@ sources:
         - water
         - awkward
         upgraded: true
-    xp: 30
+    xp: 60
     menu_item:
       material: potion
       potion_data:
@@ -111,7 +111,7 @@ sources:
         - awkward
         extended: false
         upgraded: false
-    xp: 40
+    xp: 80
     menu_item:
       material: splash_potion
       potion_data:
@@ -127,7 +127,7 @@ sources:
         - water
         - awkward
         extended: true
-    xp: 50
+    xp: 100
     menu_item:
       material: splash_potion
       potion_data:
@@ -143,7 +143,7 @@ sources:
         - water
         - awkward
         upgraded: true
-    xp: 50
+    xp: 100
     menu_item:
       material: splash_potion
       potion_data:
@@ -160,7 +160,7 @@ sources:
         - awkward
         extended: false
         upgraded: false
-    xp: 60
+    xp: 120
     menu_item:
       material: lingering_potion
       potion_data:
@@ -176,7 +176,7 @@ sources:
         - water
         - awkward
         extended: true
-    xp: 70
+    xp: 140
     menu_item:
       material: lingering_potion
       potion_data:
@@ -192,7 +192,7 @@ sources:
         - water
         - awkward
         upgraded: true
-    xp: 70
+    xp: 140
     menu_item:
       material: lingering_potion
       potion_data:
@@ -200,12 +200,12 @@ sources:
   golden_apple:
     type: item_consume
     item: golden_apple
-    xp: 30
+    xp: 60
     menu_item:
       material: golden_apple
   enchanted_golden_apple:
     type: item_consume
     item: enchanted_golden_apple
-    xp: 500
+    xp: 1000
     menu_item:
       material: enchanted_golden_apple

@@ -23,7 +23,7 @@ Scout:
       value: wanderer
   requirements:
     time:
-      value: 2h
+      value: 5h
   results:
     command:
       value: lp user &p parent set scout
@@ -40,7 +40,7 @@ Adventurer:
       value: scout
   requirements:
     time:
-      value: 4h
+      value: 10h
   results:
     command:
       value: lp user &p parent set adventurer
@@ -57,7 +57,7 @@ Squire:
       value: adventurer
   requirements:
     time:
-      value: 7h
+      value: 20h
   results:
     command:
       value: lp user &p parent set squire
@@ -74,7 +74,7 @@ Knight:
       value: squire
   requirements:
     time:
-      value: 12h
+      value: 50h
   results:
     command:
       value: lp user &p parent set knight
@@ -91,7 +91,7 @@ Lord:
       value: knight
   requirements:
     time:
-      value: 20h
+      value: 100h
   results:
     command:
       value: lp user &p parent set lord

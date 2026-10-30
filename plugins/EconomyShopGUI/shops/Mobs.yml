@@ -17,10 +17,6 @@ pages:
         material: BONE
         buy: 6
         sell: 1.5
-      '5':
-        material: BREEZE_ROD
-        buy: 20
-        sell: 5
       '6':
         material: ENDER_PEARL
         buy: 7
@@ -33,10 +29,6 @@ pages:
         material: FERMENTED_SPIDER_EYE
         buy: 9.57
         sell: 2.4
-      '9':
-        material: GHAST_TEAR
-        buy: 40
-        sell: 10
       '10':
         material: GUNPOWDER
         buy: 15.5

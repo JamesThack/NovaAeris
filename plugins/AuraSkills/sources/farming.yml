@@ -6,13 +6,13 @@ default:
 sources:
   wheat:
     block: wheat
-    xp: 3.0
+    xp: 6.0
     check_replace: false
     state:
       age: 7
   potato:
     block: potatoes
-    xp: 3.5
+    xp: 7.0
     check_replace: false
     state:
       age: 7
@@ -20,7 +20,7 @@ sources:
       material: potato
   carrot:
     block: carrots
-    xp: 3.5
+    xp: 7.0
     check_replace: false
     state:
       age: 7
@@ -28,7 +28,7 @@ sources:
       material: carrot
   beetroot:
     block: beetroots
-    xp: 3.7
+    xp: 7.4
     check_replace: false
     state:
       age: 3
@@ -36,31 +36,31 @@ sources:
       material: beetroot
   nether_wart:
     block: nether_wart
-    xp: 3.7
+    xp: 7.4
     check_replace: false
     state:
       age: 3
   pumpkin:
     block: pumpkin
-    xp: 4.0
+    xp: 8.0
     check_replace: true
   melon:
     block: melon
-    xp: 4.0
+    xp: 8.0
     check_replace: true
   sugar_cane:
     block: sugar_cane
-    xp: 2.0
+    xp: 4.0
     trigger: break
     check_replace: true
   bamboo:
     block: bamboo
-    xp: 0.25
+    xp: 0.50
     trigger: break
     check_replace: true
   cocoa:
     block: cocoa
-    xp: 4.0
+    xp: 8.0
     check_replace: false
     state:
       age: 2
@@ -68,20 +68,20 @@ sources:
       material: cocoa_beans
   cactus:
     block: cactus
-    xp: 6.0
+    xp: 12.0
     trigger: break
     check_replace: true
   brown_mushroom:
     block: brown_mushroom
-    xp: 7.0
+    xp: 14.0
     check_replace: true
   red_mushroom:
     block: red_mushroom
-    xp: 7.0
+    xp: 14.0
     check_replace: true
   shelf_mushroom:
     block: shelf_mushroom
-    xp: 5.0
+    xp: 10.0
     check_replace_all_states: true
     state:
       age: 1
@@ -89,19 +89,19 @@ sources:
     blocks:
     - kelp
     - kelp_plant
-    xp: 0.3
+    xp: 0.6
     trigger: break
     check_replace: true
     menu_item:
       material: kelp
   sea_pickle:
     block: sea_pickle
-    xp: 4.0
+    xp: 8.0
     check_replace: true
     state_multiplier: pickles
   sweet_berry_bush:
     block: sweet_berry_bush
-    xp: 2.5
+    xp: 5.0
     triggers:
     - break
     - interact
@@ -118,7 +118,7 @@ sources:
     blocks:
     - cave_vines
     - cave_vines_plant
-    xp: 4.5
+    xp: 9.0
     triggers:
     - break
     - interact
@@ -131,11 +131,11 @@ sources:
       material: glow_berries
   torchflower:
     block: torchflower
-    xp: 9.0
+    xp: 18.0
     check_replace: true
   pitcher_plant:
     block: pitcher_crop
-    xp: 1.0
+    xp: 2.0
     check_replace: false
     state:
       age: 4

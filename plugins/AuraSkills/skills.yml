@@ -74,7 +74,7 @@ skills:
     options:
       enabled: true
       max_level: 100
-      spawner_multiplier: 1
+      spawner_multiplier: 0
       check_multiplier_permissions: true
   auraskills/defense:
     abilities:
@@ -103,7 +103,7 @@ skills:
     options:
       enabled: true
       max_level: 100
-      spawner_multiplier: 1
+      spawner_multiplier: 0
       check_multiplier_permissions: true
   auraskills/agility:
     abilities:
