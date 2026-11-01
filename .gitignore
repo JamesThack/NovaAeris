@@ -128,3 +128,7 @@ plugins/Jobs/blockOwnerShips.yml
 /plugins/AxGraves
 /plugins/AxAPI
 /plugins/Simple_RTP
+/data-storage
+/plugins/Slimefun/cache
+plugins/Slimefun/.metrics-service-enabled
+plugins/Slimefun/multiblock-owners.yml
