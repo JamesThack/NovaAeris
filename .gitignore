@@ -133,3 +133,6 @@ plugins/Jobs/blockOwnerShips.yml
 plugins/Slimefun/.metrics-service-enabled
 plugins/Slimefun/multiblock-owners.yml
 /plugins/Geyser-Spigot
+/plugins/floodgate
+/plugins/VotingPlugin
+/plugins/DiscordSRV
