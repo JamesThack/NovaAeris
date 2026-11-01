@@ -71,6 +71,7 @@ items:
       - ''
       - '&7Ready to explore the wider world.'
       - '&fUnlock: &e10 hours total playtime'
+      - '&fPerk: &cAccess to the Nether warp'
       - ''
       - '&8Promotions are automatic'
 
@@ -83,6 +84,7 @@ items:
       - ''
       - '&7Begin your path to knighthood.'
       - '&fUnlock: &e20 hours total playtime'
+      - '&fPerk: &5Access to the End warp'
       - ''
       - '&8Promotions are automatic'
 
