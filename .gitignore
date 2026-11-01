@@ -132,3 +132,4 @@ plugins/Jobs/blockOwnerShips.yml
 /plugins/Slimefun/cache
 plugins/Slimefun/.metrics-service-enabled
 plugins/Slimefun/multiblock-owners.yml
+/plugins/Geyser-Spigot
