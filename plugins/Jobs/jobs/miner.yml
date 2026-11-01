@@ -128,19 +128,19 @@ Miner:
       points: 7
       experience: 3
     diamond_ore:
-      income: 0.50
+      income: 20
       points: 10
       experience: 10
     deepslate_diamond_ore:
-      income: 0.62
+      income: 20
       points: 12.5
       experience: 12.5
     emerald_ore:
-      income: 0.75
+      income: 15
       points: 15
       experience: 30
     deepslate_emerald_ore:
-      income: 0.88
+      income: 15
       points: 17.5
       experience: 35
     nether_quartz_ore:
@@ -209,19 +209,19 @@ Miner:
       points: -6
       experience: -6.0
     diamond_ore:
-      income: -0.50
+      income: -20
       points: -10
       experience: -10.0
     deepslate_diamond_ore:
-      income: -0.62
+      income: -20
       points: -12.5
       experience: -12.5
     emerald_ore:
-      income: -0.75
+      income: -15
       points: -15
       experience: -30
     deepslate_emerald_ore:
-      income: -0.88
+      income: -15
       points: -17.5
       experience: -35
   Kill:
