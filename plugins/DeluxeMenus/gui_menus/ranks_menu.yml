@@ -59,6 +59,7 @@ items:
       - ''
       - '&7Find your way beyond spawn.'
       - '&fUnlock: &e5 hours total playtime'
+      - '&fPerk: Two homes'
       - ''
       - '&8Promotions are automatic'
 
@@ -72,6 +73,7 @@ items:
       - '&7Ready to explore the wider world.'
       - '&fUnlock: &e10 hours total playtime'
       - '&fPerk: &cAccess to the Nether warp'
+      - '&fPerk: Three homes'
       - ''
       - '&8Promotions are automatic'
 
@@ -85,6 +87,7 @@ items:
       - '&7Begin your path to knighthood.'
       - '&fUnlock: &e20 hours total playtime'
       - '&fPerk: &5Access to the End warp'
+      - '&fPerk: Four homes'
       - ''
       - '&8Promotions are automatic'
 
@@ -97,6 +100,7 @@ items:
       - ''
       - '&7Earn your place among the realm''s defenders.'
       - '&fUnlock: &e50 hours total playtime'
+      - '&fPerk: Five homes'
       - ''
       - '&8Promotions are automatic'
 
@@ -109,6 +113,7 @@ items:
       - ''
       - '&7A noble standing in Nova Aeris.'
       - '&fUnlock: &e100 hours total playtime'
+      - '&fPerk: Six homes'
       - ''
       - '&8Promotions are automatic'
 
@@ -118,6 +123,7 @@ items:
     display_name: '&b&lRank Progression'
     lore:
       - '&7Playtime thresholds are cumulative.'
+      - '&7Use &e/ar check &7to view your playtime.'
       - '&7Rank-ups happen automatically.'
       - ''
       - '&eReach Lord at 100 hours.'
