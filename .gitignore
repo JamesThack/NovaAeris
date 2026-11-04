@@ -138,3 +138,9 @@ plugins/Slimefun/multiblock-owners.yml
 /plugins/DiscordSRV
 /plugins/ExcellentEnchants/lang
 /plugins/Votifier
+plugins/GraveChestNO/graves.yml
+/plugins/GraveChestNO/lang
+plugins/GraveChestNO/graves.yml.bak
+/plugins/nightcore
+plugins/SignChestLock/LICENSE.txt
+plugins/Playershop/lang.yml
