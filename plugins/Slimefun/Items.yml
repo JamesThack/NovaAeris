@@ -1395,6 +1395,377 @@ MAGICIAN_TALISMAN:
       aqua_affinity:
         level:
           '1': true
+    excellentenchants:
+      darkness_cloak:
+        level:
+          '1': true
+          '3': true
+          '2': true
+      haste:
+        level:
+          '3': true
+          '2': true
+          '1': true
+      ice_aspect:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      confusing_arrows:
+        level:
+          '3': true
+          '1': true
+          '2': true
+      regrowth:
+        level:
+          '3': true
+          '2': true
+          '1': true
+          '4': true
+      restore:
+        level:
+          '2': true
+          '3': true
+          '1': true
+      river_master:
+        level:
+          '5': true
+          '4': true
+          '3': true
+          '2': true
+          '1': true
+      thunder:
+        level:
+          '1': true
+          '4': true
+          '5': true
+          '2': true
+          '3': true
+      hardened:
+        level:
+          '1': true
+          '2': true
+      bane_of_netherspawn:
+        level:
+          '3': true
+          '2': true
+          '5': true
+          '4': true
+          '1': true
+      blast_mining:
+        level:
+          '1': true
+          '2': true
+          '3': true
+          '4': true
+          '5': true
+      hover:
+        level:
+          '3': true
+          '2': true
+          '1': true
+      curse_of_fragility:
+        level:
+          '1': true
+      soulbound:
+        level:
+          '1': true
+      explosive_arrows:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      village_defender:
+        level:
+          '3': true
+          '2': true
+          '1': true
+          '5': true
+          '4': true
+      ghast:
+        level:
+          '1': true
+      ice_shield:
+        level:
+          '3': true
+          '1': true
+          '2': true
+      paralyze:
+        level:
+          '1': true
+          '4': true
+          '5': true
+          '2': true
+          '3': true
+      telekinesis:
+        level:
+          '1': true
+      double_strike:
+        level:
+          '1': true
+          '2': true
+      rebound:
+        level:
+          '1': true
+      replanter:
+        level:
+          '1': true
+      saturation:
+        level:
+          '2': true
+          '1': true
+      curse_of_death:
+        level:
+          '2': true
+          '1': true
+          '3': true
+      cold_steel:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      veinminer:
+        level:
+          '3': true
+          '2': true
+          '1': true
+      curse_of_misfortune:
+        level:
+          '2': true
+          '1': true
+          '3': true
+      kamikadze:
+        level:
+          '3': true
+          '1': true
+          '2': true
+      poisoned_arrows:
+        level:
+          '2': true
+          '3': true
+          '1': true
+      confusion:
+        level:
+          '1': true
+          '2': true
+      stopping_force:
+        level:
+          '1': true
+          '3': true
+          '2': true
+      smelter:
+        level:
+          '1': true
+          '5': true
+          '4': true
+          '3': true
+          '2': true
+      venom:
+        level:
+          '2': true
+          '1': true
+      jumping:
+        level:
+          '1': true
+          '2': true
+      decapitator:
+        level:
+          '2': true
+          '1': true
+      night_vision:
+        level:
+          '1': true
+      cure:
+        level:
+          '3': true
+          '2': true
+          '1': true
+      thrifty:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      temper:
+        level:
+          '5': true
+          '4': true
+          '3': true
+          '2': true
+          '1': true
+      electrified_arrows:
+        level:
+          '3': true
+          '2': true
+          '1': true
+      flare:
+        level:
+          '1': true
+      double_catch:
+        level:
+          '3': true
+          '1': true
+          '2': true
+      nimble:
+        level:
+          '1': true
+      curse_of_drowned:
+        level:
+          '2': true
+          '3': true
+          '1': true
+      curse_of_breaking:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      bomber:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      survivalist:
+        level:
+          '1': true
+      vampire:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      treefeller:
+        level:
+          '1': true
+      sniper:
+        level:
+          '1': true
+          '2': true
+      dragonfire_arrows:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      elemental_protection:
+        level:
+          '3': true
+          '4': true
+          '1': true
+          '2': true
+      water_breathing:
+        level:
+          '1': true
+      vampiric_arrows:
+        level:
+          '1': true
+          '3': true
+          '2': true
+      silk_chest:
+        level:
+          '1': true
+      swiper:
+        level:
+          '3': true
+          '2': true
+          '1': true
+      tunnel:
+        level:
+          '1': true
+          '3': true
+          '2': true
+      glassbreaker:
+        level:
+          '1': true
+      curse_of_mediocrity:
+        level:
+          '2': true
+          '3': true
+          '1': true
+      flame_walker:
+        level:
+          '2': true
+          '1': true
+      rage:
+        level:
+          '2': true
+          '1': true
+      lucky_miner:
+        level:
+          '2': true
+          '3': true
+          '1': true
+      cutter:
+        level:
+          '3': true
+          '1': true
+          '2': true
+      lingering:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      seasoned_angler:
+        level:
+          '3': true
+          '2': true
+          '1': true
+      auto_reel:
+        level:
+          '1': true
+      wisdom:
+        level:
+          '5': true
+          '3': true
+          '4': true
+          '1': true
+          '2': true
+      blindness:
+        level:
+          '1': true
+          '2': true
+      darkness_arrows:
+        level:
+          '1': true
+          '2': true
+          '3': true
+      exhaust:
+        level:
+          '3': true
+          '2': true
+          '1': true
+          '4': true
+      infernus:
+        level:
+          '1': true
+          '3': true
+          '2': true
+      fire_shield:
+        level:
+          '4': true
+          '2': true
+          '3': true
+          '1': true
+      speed:
+        level:
+          '1': true
+          '2': true
+      withered_arrows:
+        level:
+          '2': true
+          '1': true
+          '3': true
+      ender_bow:
+        level:
+          '1': true
+      wither:
+        level:
+          '2': true
+          '1': true
+      silk_spawner:
+        level:
+          '1': true
+      rocket:
+        level:
+          '1': true
+          '3': true
+          '2': true
   allow-enchantment-books: false
 ENDER_MAGICIAN_TALISMAN:
   enabled: true
