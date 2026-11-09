@@ -20,7 +20,7 @@ pages:
       '6':
         material: ENDER_PEARL
         buy: 7
-        sell: 1.75
+        sell: 0.20
       '7':
         material: FEATHER
         buy: 6
