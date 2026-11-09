@@ -20,7 +20,7 @@ Definition:
   # [*] Reboot required when changed.
   MinCost:
     # The cost for a level I enchantment.
-    Base: 1
+    Base: 5
     # The amount of levels added to the Base for each level above level I
     Per_Level: 10
   # The maximum possible cost of this enchantment in levels.
@@ -29,12 +29,12 @@ Definition:
   # [*] Reboot required when changed.
   MaxCost:
     # The cost for a level I enchantment.
-    Base: 6
+    Base: 12
     # The amount of levels added to the Base for each level above level I
     Per_Level: 10
   # The base cost when applying this enchantment to another item using an anvil. Halved when adding using a book, multiplied by the level of the enchantment.
   # [*] Reboot required when changed.
-  AnvilCost: 4
+  AnvilCost: 2
   # Items on which this enchantment can be applied using an anvil or using the /enchant command.
   # https://nightexpressdev.com/excellentenchants/features/item-sets
   # [*] IF INVALID ITEM SET PROVIDED, THE ENCHANTMENT WILL NOT LOAD!

@@ -144,3 +144,9 @@ plugins/GraveChestNO/graves.yml.bak
 /plugins/nightcore
 plugins/SignChestLock/LICENSE.txt
 plugins/Playershop/lang.yml
+/plugins/Playershop/userdata
+/plugins/ChatFilter
+/plugins/SimpleGraves/graves
+plugins/PlayerWarps/favorites.yml
+/plugins/PlayerWarps
+/plugins/Slimefun/world-settings

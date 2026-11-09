@@ -29,7 +29,7 @@ Definition:
   # [*] Reboot required when changed.
   MaxCost:
     # The cost for a level I enchantment.
-    Base: 8
+    Base: 9
     # The amount of levels added to the Base for each level above level I
     Per_Level: 19
   # The base cost when applying this enchantment to another item using an anvil. Halved when adding using a book, multiplied by the level of the enchantment.

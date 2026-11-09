@@ -20,7 +20,7 @@ Definition:
   # [*] Reboot required when changed.
   MinCost:
     # The cost for a level I enchantment.
-    Base: 5
+    Base: 2
     # The amount of levels added to the Base for each level above level I
     Per_Level: 17
   # The maximum possible cost of this enchantment in levels.
@@ -29,12 +29,12 @@ Definition:
   # [*] Reboot required when changed.
   MaxCost:
     # The cost for a level I enchantment.
-    Base: 12
+    Base: 6
     # The amount of levels added to the Base for each level above level I
     Per_Level: 17
   # The base cost when applying this enchantment to another item using an anvil. Halved when adding using a book, multiplied by the level of the enchantment.
   # [*] Reboot required when changed.
-  AnvilCost: 3
+  AnvilCost: 2
   # Items on which this enchantment can be applied using an anvil or using the /enchant command.
   # https://nightexpressdev.com/excellentenchants/features/item-sets
   # [*] IF INVALID ITEM SET PROVIDED, THE ENCHANTMENT WILL NOT LOAD!
@@ -97,16 +97,6 @@ Settings:
   VisualEffects:
     # Enables enchantment visual effects (mostly particles).
     Enabled: true
-Probability:
-  Trigger_Chance:
-    Base: 8.0
-    Per_Level: 3.0
-    Capacity: 100.0
-    Action: ADD
-ArrowEffects:
-  # Sets projectile particle trail effect.
-  Trail:
-    Name: ITEM_SLIME
 PotionEffect:
   # Effect duration (in seconds).
   Duration:
@@ -120,3 +110,13 @@ PotionEffect:
     Per_Level: 1.0
     Capacity: 5.0
     Action: ADD
+Probability:
+  Trigger_Chance:
+    Base: 8.0
+    Per_Level: 3.0
+    Capacity: 100.0
+    Action: ADD
+ArrowEffects:
+  # Sets projectile particle trail effect.
+  Trail:
+    Name: ITEM_SLIME
