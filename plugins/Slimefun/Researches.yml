@@ -780,3 +780,127 @@ slimefun:
   slot_lock:
     cost: 8
     enabled: true
+foxymachines:
+  electric_wind_staff:
+    cost: 22
+    enabled: true
+  electric_fire_staffs:
+    cost: 34
+    enabled: true
+  healing_bow:
+    cost: 30
+    enabled: true
+  reinforced_string:
+    cost: 18
+    enabled: true
+  improvement_forge:
+    cost: 48
+    enabled: true
+  improvement_core:
+    cost: 28
+    enabled: true
+  potion_mixer:
+    cost: 28
+    enabled: true
+  electric_gold_refinery:
+    cost: 28
+    enabled: true
+  chunk_loader:
+    cost: 52
+    enabled: true
+  stabilized_blistering_block:
+    cost: 26
+    enabled: true
+  boosted_rail:
+    cost: 16
+    enabled: true
+  berry_bush_trimmer:
+    cost: 20
+    enabled: true
+  forcefield_dome:
+    cost: 66
+    enabled: true
+  remote_controller:
+    cost: 32
+    enabled: true
+  ingots:
+    cost: 24
+    enabled: true
+  sacrificial_altar:
+    cost: 40
+    enabled: true
+  sacrificial_altar_drops:
+    cost: 28
+    enabled: true
+  demonic_plate:
+    cost: 16
+    enabled: true
+  forcefield_materials:
+    cost: 36
+    enabled: true
+  wireless_transmitter:
+    cost: 26
+    enabled: true
+  poseidons_fishing_rod:
+    cost: 32
+    enabled: true
+  fishing_materials:
+    cost: 26
+    enabled: true
+  swords:
+    cost: 44
+    enabled: true
+  magic_lumps:
+    cost: 12
+    enabled: true
+  purified_bone:
+    cost: 22
+    enabled: true
+  blood_infused_skull:
+    cost: 16
+    enabled: true
+  armor:
+    cost: 42
+    enabled: true
+  bloody_bucket:
+    cost: 20
+    enabled: true
+  equanimous_gem:
+    cost: 36
+    enabled: true
+  ultimate_sword:
+    cost: 52
+    enabled: true
+  armor_frame:
+    cost: 24
+    enabled: true
+  unbreakable_rune:
+    cost: 32
+    enabled: true
+  pixie_queen:
+    cost: 52
+    enabled: true
+  pixie_dust:
+    cost: 22
+    enabled: true
+  headless_horseman:
+    cost: 56
+    enabled: true
+  vile_seeds:
+    cost: 24
+    enabled: true
+  acri_arcum:
+    cost: 46
+    enabled: true
+  ghost_block_remover:
+    cost: 44
+    enabled: true
+  build_wands:
+    cost: 36
+    enabled: true
+  nuclear_salt:
+    cost: 16
+    enabled: true
+  compressed_sponge:
+    cost: 14
+    enabled: true

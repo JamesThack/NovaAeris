@@ -1,5 +1,5 @@
 Locale: en
-PilotTool: STICK
+PilotTool: CLOCK
 DisableSpillProtection: false
 DisableIceForm: true
 SinkCheckTicks: 100

@@ -11,6 +11,9 @@ Disabled:
   Global:
   - custom_sharpness
   - example_name
+  - cutter
+  - nimble
+  - kamikadze
   # Put here CUSTOM enchantment names that you want to disable in specific worlds.
   # To disable all enchantments for a world, use '*' instead of enchantment names.
   # Enchantment names are equal to their config file names in the '/enchants/' directory.
