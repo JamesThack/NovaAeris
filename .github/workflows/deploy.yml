@@ -14,6 +14,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Skip empty files (FTPS 0-byte workaround)
+        run: find . -not -path './.git/*' -type f -empty -print -delete
+
       - name: Sync files to DatHost
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
