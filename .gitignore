@@ -1,9 +1,16 @@
-# ==============================================================================
-# Java, Build Artifacts & Archives
-# ==============================================================================
+# Compiled class file
 *.class
+
+# Log file
+*.log
+
+# BlueJ files
 *.ctxt
+
+# Mobile Tools for Java (J2ME)
 .mtj.tmp/
+
+# Package Files #
 *.jar
 *.war
 *.nar
@@ -12,209 +19,157 @@
 *.tar.gz
 *.rar
 
-# ==============================================================================
-# World Saves & Region Data
-# ==============================================================================
-/world/
-/world_nether/
-/world_the_end/
-/spawn/
-/world_*/
-session.lock
-uid.dat
-level.dat
-level.dat_old
-*.mca
-*.mcc
-
-# ==============================================================================
-# Server Runtime, Caches, Logs & Crash Reports
-# ==============================================================================
-/logs/
-/crash-reports/
-/cache/
-/bundler/
-/libraries/
-/versions/
-/data-storage/
-/plugins/.paper-remapped/
-*.log
-*.log.gz
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-
-# ==============================================================================
-# Databases, Backups & Temporary Files
-# ==============================================================================
-*.db
-*.db-journal
-*.db-wal
-*.db-shm
-*.sqlite
-*.sqlite3
-*.mv.db
-*.trace.db
-*.h2.db
-*.bak
-*.old
-*.tmp
-
-# ==============================================================================
-# Secrets, Credentials & Server Access Control
-# ==============================================================================
-# server.properties contains RCON credentials and host binding settings.
-server.properties
-eula.txt
-ops.json
+/.idea
+/libraries
+/logs
+/world_the_end
+/world_nether
+/world
 whitelist.json
+usercache.json
+/plugins/WorldEdit/.archive-unpack
+/plugins/SkinsRestorer/locales
+/plugins/LuckPerms/translations
+wepif.yml
+version_history.json
+server.properties
+spigot.yml
+crash-reports/crash-2026-09-26_16.38.01-server.txt
+help.yml
+ops.json
+permissions.yml
+eula.txt
 banned-ips.json
 banned-players.json
-usercache.json
-usernamecache.json
-version_history.json
-wepif.yml
-permissions.yml
-help.yml
-*.secret
-*.key
-*.pem
-*.p12
-.env
-.env.*
-
-# ==============================================================================
-# Server Root Configs (currently unmanaged by Git)
-# Remove a line below if you decide to track and deploy that server config.
-# ==============================================================================
 bukkit.yml
-spigot.yml
-commands.yml
-/config/
-
-# ==============================================================================
-# Local IDE, OS & Development Files
-# ==============================================================================
-/.idea/
-.DS_Store
-Thumbs.db
+/plugins/WorldGuard
+/plugins/WorldEdit
+/plugins/Citizens/saves.yml
+/plugins/AuraSkills/config.yml
 /agent-plans/
+/plugins/Werewolf/players
+/plugins/Werewolf
+/plugins/ViaVersion
+/plugins/ViaBackwards
+/plugins/Vault
+/plugins/VampireRevamp
+/plugins/Towny
+/plugins/spark
+/plugins/SkinsRestorer
+/plugins/PlaceholderAPI
+/plugins/NBTAPI
+/plugins/NatureRevive
+/plugins/Movecraft/localisation
+plugins/Magic/worlds.yml
+plugins/Magic/messages.yml
+!plugins/Magic/messages.yml
+/plugins/Magic/defaults
+/plugins/Magic/data
+plugins/LuckPerms/luckperms-h2-v2.mv.db
+plugins/LuckPerms/contexts.json
+/plugins/faststats
+/plugins/Essentials
+plugins/Denizen/server_flags.dat
+plugins/Denizen/secrets.secret
+/plugins/Denizen/midi
+/plugins/CoreProtect
+/plugins/CalebCompass
+/plugins/BetonQuest/lang
+/plugins/bStats
+/plugins/BetonQuest/.meta
+/plugins/BetonQuest/.cache
+/plugins/AuraSkills/userdata
+/plugins/AuraSkills/messages
+/plugins/AuraSkills/regiondata
+/plugins/AuraSkills/backups
+commands.yml
+config/paper-global.yml
+/config
+/plugins/.paper-remapped
+/plugins/BetonQuest/fonts
+plugins/BetonQuest/database.db
+/spawn
+plugins/TAB/users.yml
+/plugins/TAB
+/plugins/Multiverse-Core
+/plugins/FastAsyncWorldEdit
+/plugins/VoidGen
+/crash-reports
+config.yml
+/plugins/BetterRTP
+/plugins/BetterStructures
+/plugins/Autorank/backups
+/plugins/Autorank/data
+plugins/Autorank/DefaultBehavior.yml
+plugins/Autorank/internalprops.yml
+plugins/Autorank/lang/lang.yml
+plugins/Autorank/lang/langFR.yml
+/plugins/Autorank/lang
+/plugins/Autorank/logging
+plugins/Autorank/playerdata/PlayerData.yml
+/plugins/Autorank/uuids
+/plugins/GHolo
+/plugins/LibsDisguises
+/plugins/Jobs/TranslatableWords
+/plugins/Jobs/locale
+plugins/Jobs/jobs.sqlite.db-journal
+plugins/Jobs/jobs.sqlite.db
+/plugins/EconomyShopGUI/transactions
+plugins/EconomyShopGUI/transaction-log.txt
+/plugins/EconomyShopGUI/LanguageFiles
+/plugins/AutoMessage
+/plugins/CMILib
+/plugins/EconomyShopGUI/cache
+plugins/Jobs/activeBoosts.yml
+plugins/Jobs/blockOwnerShips.yml
+/plugins/AxGraves
+/plugins/AxAPI
+/plugins/Simple_RTP
+/data-storage
+/plugins/Slimefun/cache
+plugins/Slimefun/.metrics-service-enabled
+plugins/Slimefun/multiblock-owners.yml
+/plugins/Geyser-Spigot
+/plugins/floodgate
+/plugins/VotingPlugin
+/plugins/DiscordSRV
+/plugins/ExcellentEnchants/lang
+/plugins/Votifier
+plugins/GraveChestNO/graves.yml
+/plugins/GraveChestNO/lang
+plugins/GraveChestNO/graves.yml.bak
+/plugins/nightcore
+plugins/SignChestLock/LICENSE.txt
+plugins/Playershop/lang.yml
+/plugins/Playershop/userdata
+/plugins/ChatFilter
+/plugins/SimpleGraves/graves
+plugins/PlayerWarps/favorites.yml
+/plugins/PlayerWarps
+/plugins/Slimefun/world-settings
 /custom-plugins/BedrockMenuFix
 /custom-plugins/SlimefunTagFix
 /custom-plugins/SpaceSuitLoreFix
-
-# ==============================================================================
-# Plugin Config Defaults & Runtime Data
-# Note: Bare config.yml prevents new plugin config.yml files from being added
-# unintentionally. Already-tracked config.yml files remain tracked; use
-# `git add -f <path>` to explicitly track a new plugin's config.yml.
-# ==============================================================================
-config.yml
-
-/plugins/ArtMap/
-/plugins/AuraSkills/backups/
-/plugins/AuraSkills/config.yml
-/plugins/AuraSkills/messages/
-/plugins/AuraSkills/regiondata/
-/plugins/AuraSkills/userdata/
-/plugins/AutoMessage/
-/plugins/Autorank/backups/
-/plugins/Autorank/data/
-/plugins/Autorank/DefaultBehavior.yml
-/plugins/Autorank/internalprops.yml
-/plugins/Autorank/lang/
-/plugins/Autorank/logging/
-/plugins/Autorank/playerdata/
-/plugins/Autorank/uuids/
-/plugins/AxAPI/
-/plugins/AxGraves/
-/plugins/BetonQuest/.cache/
-/plugins/BetonQuest/.meta/
-/plugins/BetonQuest/database.db
-/plugins/BetonQuest/fonts/
-/plugins/BetonQuest/lang/
-/plugins/BetterRTP/
-/plugins/BetterStructures/
-/plugins/BreweryX/
-/plugins/bStats/
-/plugins/CalebCompass/
-/plugins/ChatFilter/
-/plugins/ChatGames/
-/plugins/ChatItem/
-/plugins/Citizens/saves.yml
-/plugins/Citizens/shops.yml
-/plugins/CMILib/
-/plugins/CoreProtect/
-/plugins/CrazyCrates/
-/plugins/Denizen/maps.yml
-/plugins/Denizen/midi/
-/plugins/Denizen/scoreboards.yml
-/plugins/Denizen/secrets.secret
-/plugins/Denizen/server_flags.dat
-/plugins/DiscordSRV/
-/plugins/EconomyShopGUI/cache/
-/plugins/EconomyShopGUI/LanguageFiles/
-/plugins/EconomyShopGUI/transaction-log.txt
-/plugins/EconomyShopGUI/transactions/
-/plugins/Essentials/
-/plugins/ExcellentEnchants/lang/
-/plugins/FastAsyncWorldEdit/
-/plugins/faststats/
-/plugins/floodgate/
-/plugins/FoxyMachines/
-/plugins/Galactifun/
-/plugins/Geyser-Spigot/
-/plugins/GHolo/
-/plugins/GraveChestNO/graves.yml
-/plugins/GraveChestNO/graves.yml.bak
-/plugins/GraveChestNO/lang/
-/plugins/GSit/
-/plugins/Jobs/activeBoosts.yml
-/plugins/Jobs/blockOwnerShips.yml
-/plugins/Jobs/jobs.sqlite.db
-/plugins/Jobs/jobs.sqlite.db-journal
-/plugins/Jobs/locale/
-/plugins/Jobs/Signs.yml
-/plugins/Jobs/TranslatableWords/
-/plugins/LibsDisguises/
-/plugins/LuckPerms/contexts.json
-/plugins/LuckPerms/luckperms-h2-v2.mv.db
-/plugins/LuckPerms/translations/
-/plugins/Magic/data/
-/plugins/Magic/defaults/
-/plugins/Magic/worlds.yml
-/plugins/MarriageMaster/
-/plugins/Movecraft/localisation/
-/plugins/Multiverse-Core/
-/plugins/NatureRevive/
-/plugins/NBTAPI/
-/plugins/nightcore/
-/plugins/PlaceholderAPI/
-/plugins/Playershop/lang.yml
-/plugins/Playershop/userdata/
-/plugins/PlayerWarps/
-/plugins/PlayerWarps/
-/plugins/PlayerWarps/favorites.yml
-/plugins/PlayerWarps/warps.yml
-/plugins/ProtocolLib/
-/plugins/SignChestLock/LICENSE.txt
-/plugins/Simple_RTP/
-/plugins/SimpleGraves/graves/
-/plugins/SkinsRestorer/
-/plugins/Slimefun/
-/plugins/Slimefun/.metrics-service-enabled
-/plugins/Slimefun/cache/
-/plugins/Slimefun/multiblock-owners.yml
-/plugins/Slimefun/world-settings/
-/plugins/spark/
-/plugins/TAB/
-/plugins/Towny/
-/plugins/VampireRevamp/
-/plugins/Vault/
-/plugins/ViaBackwards/
-/plugins/ViaVersion/
-/plugins/VoidGen/
-/plugins/Votifier/
-/plugins/VotingPlugin/
-/plugins/Werewolf/
-/plugins/WorldEdit/
-/plugins/WorldGuard/
+/plugins/ArtMap
+/plugins/BreweryX
+/plugins/ChatGames
+/plugins/ChatItem/lang
+/plugins/ChatItem
+/plugins/CrazyCrates
+/plugins/Galactifun
+/plugins/ProtocolLib
+/world_galactifun_venus
+/world_galactifun_titan
+/world_galactifun_the_moon
+/world_galactifun_mars
+/world_galactifun_enceladus
+/world_galactifun_io
+/world_galactifun_earth_orbit
+/plugins/Slimefun
+/plugins/Slimefun
+/plugins/FoxyMachines
+/plugins/GSit
+/plugins/MarriageMaster
