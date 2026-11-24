@@ -173,3 +173,5 @@ plugins/PlayerWarps/favorites.yml
 /plugins/FoxyMachines
 /plugins/GSit
 /plugins/MarriageMaster
+.claude/settings.local.json
+.mcp.json
