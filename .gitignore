@@ -48,6 +48,14 @@ bukkit.yml
 /plugins/WorldGuard
 /plugins/WorldEdit
 /plugins/Citizens/saves.yml
+/plugins/AuraSkills/items.yml
+/plugins/Magic/arenas.yml
+/plugins/Jobs/restrictedAreas.yml
+/plugins/PlayerWarps/warps.yml
+/plugins/Citizens/shops.yml
+/plugins/Jobs/Signs.yml
+/plugins/Denizen/maps.yml
+/plugins/Denizen/scoreboards.yml
 /plugins/AuraSkills/config.yml
 /agent-plans/
 /plugins/Werewolf/players
